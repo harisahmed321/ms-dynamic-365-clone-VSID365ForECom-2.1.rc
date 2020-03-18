@@ -65,6 +65,11 @@
             "description": "Click here",
             "type": "string",
             "required": true
+        },
+        "textColor": {
+            "friendlyName": "buttonText",
+            "description": "Click here",
+            "type": "string"
         }
     },
     "resources": {

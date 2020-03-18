@@ -11,10 +11,16 @@ const _renderImage = (productImageUrl: string, productName: string): JSX.Element
     return <img src={productImageUrl} alt={productName} className='img-fluid p-3' />;
 };
 
-const _renderInfo = (productName: string, productInfo: string, productPrice: string, buttonInfo: string): JSX.Element => {
+const _renderInfo = (
+    productName: string,
+    productInfo: string,
+    productPrice: string,
+    buttonInfo: string,
+    textColor: string
+): JSX.Element => {
     return (
         <div className='container'>
-            <h2>{productName}</h2>
+            <h2 style={{ color: textColor }}>{productName}</h2>
             <p>{productInfo}</p>
             <p>{productPrice}</p>
             <button type='button' className='btn btn-primary'>
@@ -25,17 +31,17 @@ const _renderInfo = (productName: string, productInfo: string, productPrice: str
 };
 
 export default (props: IProductFeatureViewProps) => {
-    const { productName, productInfo, productImageUrl, productPrice, buttonInfo, alignment } = props;
+    const { productName, productInfo, productImageUrl, productPrice, buttonInfo, alignment, textColor } = props;
 
     let left;
     let right;
 
     if (alignment === imageAlignment.left) {
         left = _renderImage(productImageUrl, productName);
-        right = _renderInfo(productName, productInfo, productPrice, buttonInfo);
+        right = _renderInfo(productName, productInfo, productPrice, buttonInfo, textColor);
     } else {
         right = _renderImage(productImageUrl, productName);
-        left = _renderInfo(productName, productInfo, productPrice, buttonInfo);
+        left = _renderInfo(productName, productInfo, productPrice, buttonInfo, textColor);
     }
 
     return (

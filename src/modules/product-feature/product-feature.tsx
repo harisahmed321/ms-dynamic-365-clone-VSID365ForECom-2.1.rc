@@ -15,6 +15,7 @@ export interface IProductFeatureViewProps extends IProductFeatureProps<IProductF
     productPrice: string;
     buttonInfo: string;
     alignment: imageAlignment;
+    textColor: string;
 }
 
 /**
@@ -40,7 +41,8 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
             productImageUrl: ProductImageUrl,
             productPrice: ProductPrice,
             buttonInfo: ButtonInfo,
-            alignment: config.imageAlignment
+            alignment: config.imageAlignment,
+            textColor: config.textColor
         };
         console.log('products', this.props.data.products);
         return this.props.renderView(ProductFeatureViewProps);
