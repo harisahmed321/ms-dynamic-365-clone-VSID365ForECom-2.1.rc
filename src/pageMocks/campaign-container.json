@@ -19,6 +19,7 @@
                                             "id": "ProductFeature__0",
                                             "typeName": "product-feature",
                                             "config": {
+                                                "productIds": "68719498121",
                                                 "imageAlignment": "left",
                                                 "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
                                                 "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
@@ -26,8 +27,7 @@
                                                     "src": "https://bit.ly/33cMGxr",
                                                     "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
                                                 },
-                                                "buttonText": "Buy Now",
-                                                "productIds": "68719498121"
+                                                "buttonText": "Buy Now"
                                             }
                                         }
                                     ],
@@ -36,8 +36,8 @@
                                             "id": "ProductFeature__1",
                                             "typeName": "product-feature",
                                             "config": {
+                                                "productIds": "68719498121",
                                                 "imageAlignment": "right",
-                                                "productIds": "22565430170",
                                                 "buttonText": "Buy Now"
                                             }
                                         }

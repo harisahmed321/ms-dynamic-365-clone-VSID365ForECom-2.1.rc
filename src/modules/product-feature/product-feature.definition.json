@@ -7,11 +7,16 @@
     "tags": ["Additional tags go here"],
     "dataActions": {
         "products": {
-            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-full-products",
             "runOn": "server"
         }
     },
     "config": {
+        "productIds": {
+            "friendlyName": "Section Heading",
+            "description": "section heading",
+            "type": "string"
+        },
         "imageAlignment": {
             "friendlyName": "Image Alignment",
             "description": "Sets the desired alignment of the image, either left or right on the text.",

@@ -8,7 +8,6 @@ import { ICampaignPageContainerViewProps } from './campaign-page-container';
 
 export default (props: ICampaignPageContainerViewProps) => {
     const { slots } = props;
-    console.log(slots.primary[0]);
     return (
         <div>
             {/* <div className='row'>{slots.header[0]}</div> */}

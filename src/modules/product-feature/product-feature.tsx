@@ -42,7 +42,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
             buttonInfo: ButtonInfo,
             alignment: config.imageAlignment
         };
-
+        console.log('products', this.props.data.products);
         return this.props.renderView(ProductFeatureViewProps);
     }
 }
