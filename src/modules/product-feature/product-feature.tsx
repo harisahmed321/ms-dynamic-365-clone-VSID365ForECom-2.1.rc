@@ -16,6 +16,7 @@ export interface IProductFeatureViewProps extends IProductFeatureProps<IProductF
     buttonInfo: string;
     alignment: imageAlignment;
     textColor: string;
+    btnClickMe: any;
 }
 
 /**
@@ -24,6 +25,11 @@ export interface IProductFeatureViewProps extends IProductFeatureProps<IProductF
  * @extends {React.PureComponent<IProductFeatureProps<IProductFeatureData>>}
  */
 class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFeatureData>> {
+    public onBtnClickMe = () => {
+        const products = this.props.data.product[0].result;
+        console.log('button event click', products);
+    };
+
     public render(): JSX.Element | null {
         const { config } = this.props;
 
@@ -42,9 +48,10 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
             productPrice: ProductPrice,
             buttonInfo: ButtonInfo,
             alignment: config.imageAlignment,
-            textColor: config.textColor
+            textColor: config.textColor,
+            btnClickMe: this.onBtnClickMe
         };
-        console.log('products', this.props.data.products);
+        // console.log('products', this.props.data.products);
         return this.props.renderView(ProductFeatureViewProps);
     }
 }

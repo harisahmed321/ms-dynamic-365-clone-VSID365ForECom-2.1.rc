@@ -16,14 +16,15 @@ const _renderInfo = (
     productInfo: string,
     productPrice: string,
     buttonInfo: string,
-    textColor: string
+    textColor: string,
+    btnClickMe: any
 ): JSX.Element => {
     return (
         <div className='container'>
             <h2 style={{ color: textColor }}>{productName}</h2>
             <p>{productInfo}</p>
             <p>{productPrice}</p>
-            <button type='button' className='btn btn-primary'>
+            <button type='button' className='btn btn-primary' onClick={btnClickMe}>
                 {buttonInfo}
             </button>
         </div>
@@ -31,17 +32,17 @@ const _renderInfo = (
 };
 
 export default (props: IProductFeatureViewProps) => {
-    const { productName, productInfo, productImageUrl, productPrice, buttonInfo, alignment, textColor } = props;
+    const { productName, productInfo, productImageUrl, productPrice, buttonInfo, alignment, textColor, btnClickMe } = props;
 
     let left;
     let right;
 
     if (alignment === imageAlignment.left) {
         left = _renderImage(productImageUrl, productName);
-        right = _renderInfo(productName, productInfo, productPrice, buttonInfo, textColor);
+        right = _renderInfo(productName, productInfo, productPrice, buttonInfo, textColor, btnClickMe);
     } else {
         right = _renderImage(productImageUrl, productName);
-        left = _renderInfo(productName, productInfo, productPrice, buttonInfo, textColor);
+        left = _renderInfo(productName, productInfo, productPrice, buttonInfo, textColor, btnClickMe);
     }
 
     return (

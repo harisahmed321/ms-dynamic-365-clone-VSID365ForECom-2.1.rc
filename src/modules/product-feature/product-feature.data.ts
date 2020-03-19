@@ -6,5 +6,5 @@
 import { AsyncResult, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
 
 export interface IProductFeatureData {
-    products: AsyncResult<SimpleProduct>;
+    product: AsyncResult<SimpleProduct>;
 }
