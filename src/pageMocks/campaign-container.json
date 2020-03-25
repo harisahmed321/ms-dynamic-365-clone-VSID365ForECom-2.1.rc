@@ -17,33 +17,15 @@
                                     "slot1": [
                                         {
                                             "id": "ProductFeature__0",
-                                            "typeName": "product-feature",
-                                            "config": {
-                                                "productIds": "68719498121",
-                                                "imageAlignment": "left",
-                                                "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-                                                "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-                                                "productImage": {
-                                                    "src": "https://bit.ly/33cMGxr",
-                                                    "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
-                                                },
-                                                "buttonText": "Buy Now",
-                                                "buttonExtendText": "Extend Text",
-                                                "textColor": "#4327dc"
-                                            }
+                                            "typeName": "sample-button",
+                                            "config": {}
                                         }
                                     ],
                                     "slot2": [
                                         {
                                             "id": "ProductFeature__1",
-                                            "typeName": "product-feature",
-                                            "config": {
-                                                "productIds": "68719498121",
-                                                "imageAlignment": "right",
-                                                "buttonText": "Buy Now",
-                                                "textColor": "#e91e63",
-                                                "buttonExtendText": "Extend Text 2"
-                                            }
+                                            "typeName": "sample-message",
+                                            "config": {}
                                         }
                                     ]
                                 }
