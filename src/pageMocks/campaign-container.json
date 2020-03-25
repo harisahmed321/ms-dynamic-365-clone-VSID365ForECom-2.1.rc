@@ -28,6 +28,7 @@
                                                     "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
                                                 },
                                                 "buttonText": "Buy Now",
+                                                "buttonExtendText": "Extend Text",
                                                 "textColor": "#4327dc"
                                             }
                                         }
@@ -40,7 +41,8 @@
                                                 "productIds": "68719498121",
                                                 "imageAlignment": "right",
                                                 "buttonText": "Buy Now",
-                                                "textColor": "#e91e63"
+                                                "textColor": "#e91e63",
+                                                "buttonExtendText": "Extend Text 2"
                                             }
                                         }
                                     ]

@@ -6,7 +6,7 @@
     "categories": ["product-feature"],
     "tags": ["Additional tags go here"],
     "dataActions": {
-        "products": {
+        "product": {
             "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-full-products",
             "runOn": "server"
         }

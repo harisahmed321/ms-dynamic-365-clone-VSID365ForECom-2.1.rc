@@ -26,8 +26,8 @@ export interface IProductFeatureViewProps extends IProductFeatureProps<IProductF
  */
 class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFeatureData>> {
     public onBtnClickMe = () => {
-        const products = this.props.data.product[0].result;
-        console.log('button event click', products);
+        const product = this.props.data.product;
+        console.log('button event click', product);
     };
 
     public render(): JSX.Element | null {
