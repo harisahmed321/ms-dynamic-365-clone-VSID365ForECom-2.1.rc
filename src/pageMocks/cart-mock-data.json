@@ -2,16 +2,16 @@
     "exception": null,
     "pageRoot": {
         "typeName": "core-root",
-        "id": "core-root_kdgzbmy",
+        "id": "core-root_kv5jcek",
         "friendlyName": "Core root 1",
         "config": {},
         "modules": {
             "htmlHead": [
                 {
-                    "typeName": "product-page-summary",
-                    "id": "product-page-summary",
-                    "friendlyName": "Product Page Summary",
-                    "config": { "title": "Fabrikam Product Detail" }
+                    "typeName": "default-page-summary",
+                    "id": "default-page-summary",
+                    "friendlyName": "Default page summary",
+                    "config": { "title": "Cart Page" }
                 }
             ],
             "body": [
@@ -24,14 +24,14 @@
                         "header": [
                             {
                                 "typeName": "default-container",
-                                "id": "IDNMAwGxa_r3302ag",
+                                "id": "IDNMAwGxa_52oyxdi",
                                 "friendlyName": "Default container",
                                 "config": { "containerType": "fluid", "layout": "stacked", "heading": {}, "childrenWidth": "four" },
                                 "modules": {
                                     "content": [
                                         {
                                             "typeName": "cookie-compliance",
-                                            "id": "IDNMAwGxa_r3302ag-cookie-compliance",
+                                            "id": "IDNMAwGxa_52oyxdi-cookie-compliance",
                                             "friendlyName": "Cookie compliance",
                                             "config": {
                                                 "content": "<p>This site uses cookies for analytics and personalized content. Accept to continue.&nbsp;</p>\n",
@@ -49,7 +49,7 @@
                                         },
                                         {
                                             "typeName": "promo-banner",
-                                            "id": "IDNMAwGxa_r3302ag-promo-banner",
+                                            "id": "IDNMAwGxa_52oyxdi-promo-banner",
                                             "friendlyName": "Promo banner",
                                             "platform": { "layout": "mediumWidth" },
                                             "config": {
@@ -63,7 +63,7 @@
                                         },
                                         {
                                             "typeName": "header",
-                                            "id": "IDNMAwGxa_r3302ag-header",
+                                            "id": "IDNMAwGxa_52oyxdi-header",
                                             "friendlyName": "Header",
                                             "config": {
                                                 "logoImage": {
@@ -102,7 +102,7 @@
                                                 "menuBar": [
                                                     {
                                                         "typeName": "navigation-menu",
-                                                        "id": "IDNMAwGxa_r3302ag-navigation-menu",
+                                                        "id": "IDNMAwGxa_52oyxdi-navigation-menu",
                                                         "friendlyName": "Navigation menu",
                                                         "config": {
                                                             "navigationMenuSource": "all",
@@ -151,7 +151,7 @@
                                                 "search": [
                                                     {
                                                         "typeName": "search",
-                                                        "id": "IDNMAwGxa_r3302ag-search",
+                                                        "id": "IDNMAwGxa_52oyxdi-search",
                                                         "friendlyName": "Search",
                                                         "config": { "topResultsCount": 5.0, "imageSettings": {} }
                                                     }
@@ -165,47 +165,28 @@
                         "primary": [
                             {
                                 "typeName": "default-container",
-                                "id": "default-container",
-                                "friendlyName": "Container",
+                                "id": "default-container__0",
+                                "friendlyName": "Container 3",
                                 "config": { "containerType": "container", "layout": "stacked", "heading": {}, "childrenWidth": "four" },
                                 "modules": {
                                     "content": [
                                         {
-                                            "typeName": "buybox",
-                                            "id": "buybox",
-                                            "friendlyName": "Buybox",
-                                            "config": { "titleHeadingTag": "h1" },
-                                            "modules": {
-                                                "mediaGallery": [
-                                                    {
-                                                        "typeName": "media-gallery",
-                                                        "id": "media-gallery",
-                                                        "friendlyName": "Media gallery",
-                                                        "config": {
-                                                            "thumbnailsOrientation": "horizontal",
-                                                            "thumbnailImageSettings": {
-                                                                "quality": 80,
-                                                                "lazyload": true,
-                                                                "viewports": {
-                                                                    "sm": { "w": 100, "h": 0, "q": "w=100&h=0&q=80&m=6&f=jpg" },
-                                                                    "lg": { "w": 100, "h": 0, "q": "w=100&h=0&q=80&m=6&f=jpg" },
-                                                                    "xl": { "w": 100, "h": 0, "q": "w=100&h=0&q=80&m=6&f=jpg" }
-                                                                }
-                                                            },
-                                                            "galleryImageSettings": {
-                                                                "quality": 80,
-                                                                "lazyload": true,
-                                                                "viewports": {
-                                                                    "xs": { "w": 767, "h": 767, "q": "w=767&h=767&q=80&m=6&f=jpg" },
-                                                                    "sm": { "w": 600, "h": 600, "q": "w=600&h=600&q=80&m=6&f=jpg" },
-                                                                    "md": { "w": 600, "h": 772, "q": "w=600&h=772&q=80&m=6&f=jpg" },
-                                                                    "lg": { "w": 0, "h": 772, "q": "w=0&h=772&q=80&m=6&f=jpg" },
-                                                                    "xl": { "w": 0, "h": 772, "q": "w=0&h=772&q=80&m=6&f=jpg" }
-                                                                }
-                                                            }
-                                                        }
+                                            "typeName": "cart-clone",
+                                            "id": "cart 1",
+                                            "friendlyName": "Cart 1",
+                                            "config": {
+                                                "imageSettings": {
+                                                    "quality": 80,
+                                                    "lazyload": true,
+                                                    "viewports": {
+                                                        "xs": { "w": 70, "h": 70, "q": "w=70&h=70&q=80&m=6&f=jpg" },
+                                                        "lg": { "w": 126, "h": 126, "q": "w=126&h=126&q=80&m=6&f=jpg" },
+                                                        "xl": { "w": 126, "h": 126, "q": "w=126&h=126&q=80&m=6&f=jpg" }
                                                     }
-                                                ],
+                                                },
+                                                "rating": 3
+                                            },
+                                            "modules": {
                                                 "storeSelector": [
                                                     {
                                                         "typeName": "store-selector",
@@ -225,56 +206,43 @@
                                                     }
                                                 ]
                                             }
-                                        },
-                                        {
-                                            "typeName": "product-specification",
-                                            "id": "product-specification__0",
-                                            "friendlyName": "Product specification 1",
-                                            "config": { "heading": { "text": "Heading", "tag": "h2" } }
-                                        },
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "typeName": "default-container",
+                                "id": "default-container",
+                                "friendlyName": "Container",
+                                "config": { "containerType": "container", "layout": "stacked", "heading": {}, "childrenWidth": "four" },
+                                "modules": {
+                                    "content": [
                                         {
                                             "typeName": "product-collection",
-                                            "id": "product-collection__1",
-                                            "friendlyName": "Product collection 2",
+                                            "id": "product-collection",
+                                            "friendlyName": "Product collection",
                                             "platform": { "layout": "mediumWidth" },
                                             "config": {
                                                 "msdyn365__moduleLayout": "mediumWidth",
                                                 "productCollection": {
-                                                    "recommendationListId": "bestselling",
+                                                    "recommendationListId": "fbt",
+                                                    "includeCart": true,
                                                     "pageSize": 10,
                                                     "listType": "recommendation"
                                                 },
-                                                "heading": { "text": "Trending", "tag": "h2" },
+                                                "heading": { "text": "Frequently bought together", "tag": "h2" },
                                                 "layout": "carousel",
                                                 "imageSettings": {
-                                                    "quality": 80,
+                                                    "quality": 90,
                                                     "lazyload": true,
                                                     "viewports": {
                                                         "xs": { "w": 315, "h": 315, "q": "w=315&h=315&q=80&m=6&f=jpg" },
                                                         "lg": { "w": 315, "h": 315, "q": "w=315&h=315&q=80&m=6&f=jpg" },
                                                         "xl": { "w": 315, "h": 315, "q": "w=315&h=315&q=80&m=6&f=jpg" }
                                                     }
-                                                }
+                                                },
+                                                "rating": 3
                                             }
-                                        },
-                                        { "typeName": "spacer", "id": "spacer__0", "friendlyName": "Spacer 1", "config": {} },
-                                        {
-                                            "typeName": "ratings-histogram",
-                                            "id": "ratings-histogram__0",
-                                            "friendlyName": "Ratings histogram 1",
-                                            "config": { "heading": { "text": "Heading", "tag": "h2" } }
-                                        },
-                                        {
-                                            "typeName": "reviews-list",
-                                            "id": "reviews-list__0",
-                                            "friendlyName": "Reviews list 1",
-                                            "config": { "heading": {}, "reviewsShownOnEachPage": 10.0 }
-                                        },
-                                        {
-                                            "typeName": "write-review",
-                                            "id": "write-review__0",
-                                            "friendlyName": "Write review 1",
-                                            "config": { "heading": {} }
                                         }
                                     ]
                                 }
@@ -283,7 +251,7 @@
                         "footer": [
                             {
                                 "typeName": "default-container",
-                                "id": "IDNMAxJzO_bzrh8ms",
+                                "id": "IDNMAxJzO_1gqqxp9",
                                 "friendlyName": "Default container",
                                 "config": {
                                     "containerType": "container",
@@ -296,14 +264,14 @@
                                     "content": [
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category",
+                                            "id": "IDNMAxJzO_1gqqxp9-footer-category",
                                             "friendlyName": "Footer category",
                                             "config": { "categoryClassName": "nav-item" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item",
                                                         "friendlyName": "Footer item",
                                                         "config": {
                                                             "heading": { "text": "Customer Service", "tag": "h2" },
@@ -312,7 +280,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__0",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__0",
                                                         "friendlyName": "Footer item 1",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -329,7 +297,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__1",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__1",
                                                         "friendlyName": "Footer item 2",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -346,7 +314,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__2",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__2",
                                                         "friendlyName": "Footer item 3",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -363,7 +331,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__15",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__15",
                                                         "friendlyName": "Footer item 16",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -379,7 +347,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__16",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__16",
                                                         "friendlyName": "Footer item 17",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -398,14 +366,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__0",
+                                            "id": "IDNMAxJzO_1gqqxp9-footer-category__0",
                                             "friendlyName": "Footer category 1",
                                             "config": { "categoryClassName": "nav-item" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__3",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__3",
                                                         "friendlyName": "Footer item 4",
                                                         "config": {
                                                             "heading": { "text": "Our Stores", "tag": "h2" },
@@ -414,7 +382,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__4",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__4",
                                                         "friendlyName": "Footer item 5",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -431,7 +399,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__5",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__5",
                                                         "friendlyName": "Footer item 6",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -448,7 +416,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__6",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__6",
                                                         "friendlyName": "Footer item 7",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -468,14 +436,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__1",
+                                            "id": "IDNMAxJzO_1gqqxp9-footer-category__1",
                                             "friendlyName": "Footer category 2",
                                             "config": { "categoryClassName": "nav-item" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__7",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__7",
                                                         "friendlyName": "Footer item 8",
                                                         "config": {
                                                             "heading": { "text": "Store & Support", "tag": "h2" },
@@ -484,7 +452,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__8",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__8",
                                                         "friendlyName": "Footer item 9",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -501,7 +469,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__9",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__9",
                                                         "friendlyName": "Footer item 10",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -518,7 +486,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__10",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__10",
                                                         "friendlyName": "Footer item 11",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -538,14 +506,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__2",
+                                            "id": "IDNMAxJzO_1gqqxp9-footer-category__2",
                                             "friendlyName": "Footer category 3",
                                             "config": { "categoryClassName": "nav-item social-items" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__11",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__11",
                                                         "friendlyName": "Footer item 12",
                                                         "config": {
                                                             "heading": { "text": "Follow us", "tag": "h2" },
@@ -554,7 +522,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__12",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__12",
                                                         "friendlyName": "Footer item 13",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -587,7 +555,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__13",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__13",
                                                         "friendlyName": "Footer item 14",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -621,7 +589,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__14",
+                                                        "id": "IDNMAxJzO_1gqqxp9-footer-item__14",
                                                         "friendlyName": "Footer item 15",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -656,14 +624,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__4",
+                                            "id": "IDNMAxJzO_1gqqxp9-footer-category__4",
                                             "friendlyName": "Footer category 5",
                                             "config": {},
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "back-top-footer",
-                                                        "id": "IDNMAxJzO_bzrh8ms-back-top-footer__0",
+                                                        "id": "IDNMAxJzO_1gqqxp9-back-top-footer__0",
                                                         "friendlyName": "Back to top 1",
                                                         "config": { "destination": "#", "ariaLabel": "Back to top" }
                                                     }
@@ -680,11 +648,11 @@
         }
     },
     "renderingContext": {
-        "requestUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/black-blazer-with-zippered-breast-pocket/68719497542.p",
+        "requestUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/cart",
         "sitePath": "/fabrikamga",
         "clientIPAddress": "103.72.1.151",
         "clientContext": { "deviceType": "Pc" },
-        "canonicalUrl": null,
+        "canonicalUrl": "https://www.vsicommerceeval.com/fabrikamga/cart",
         "canonicalDomain": "www.vsicommerceeval.com",
         "staticContext": { "staticCdnUrl": "/_scnr/", "staticCdnUrlWithLocale": "/en-us/_msdyn365/_scnr/" },
         "user": {
@@ -707,7 +675,7 @@
         "locale": "en-us",
         "textDirection": "ltr",
         "suggestedMarket": null,
-        "urlTokens": { "itemId": "68719497542", "recordId": "68719497542", "pageType": "Product" },
+        "urlTokens": {},
         "apiSettings": {
             "baseUrl": "https://vsicommerceeval5efcca299aa7c8e7ret.cloud.retail.dynamics.com/",
             "channelId": 68719478279,
@@ -724,14 +692,14 @@
         },
         "gridSettings": { "xs": { "w": 767 }, "sm": { "w": 991 }, "md": { "w": 1199 }, "lg": { "w": 1599 }, "xl": { "w": 1600 } },
         "debugMode": 0,
-        "operationId": "face656ace298c47ba0ea3e68d1501fa",
+        "operationId": "5be56a84e2e51a4fb143415ad3833e14",
         "sameSiteRequired": true,
         "features": { "scnr_blob": true, "legacy_getactiveprices": true, "disable_cors": true },
         "telemetrySettings": {
             "doNotCollectBiData": false,
             "eventHubEndPoint": "",
             "eventHubAuthToken": "",
-            "operationId": "face656ace298c47ba0ea3e68d1501fa",
+            "operationId": "5be56a84e2e51a4fb143415ad3833e14",
             "url": "_msdyn365/_scnr/global-statics/static/js/da.0.js"
         }
     },

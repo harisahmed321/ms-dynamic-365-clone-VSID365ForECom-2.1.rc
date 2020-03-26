@@ -1,0 +1,303 @@
+{
+    "$type": "containerModule",
+    "friendlyName": "Cart (COPY)",
+    "name": "cart-clone",
+    "description": "Cart is used for viewing all the items added to the cart, allows user to proceed to checkout.",
+    "categories": ["Purchase", "Shopping bag"],
+    "dataActions": {
+        "storeSelectorStateManager": {
+            "path": "@msdyn365-commerce-modules/bopis-utilities/dist/lib/store-selector-state-manager/store-selector-state-manager-data-action"
+        },
+        "cart": {
+            "path": "@msdyn365-commerce/global-state/dist/lib/data-actions/cart-state-data-action",
+            "runOn": "server"
+        },
+        "products": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-products-in-active-cart",
+            "runOn": "server"
+        },
+        "orgUnitLocations": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/search-org-unit-locations",
+            "runOn": "server"
+        },
+        "wishlists": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-wishlist-by-customer-id",
+            "runOn": "client"
+        },
+        "wishlistItems": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-items-in-wishlist",
+            "runOn": "client"
+        },
+        "productAvailabilites": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-availabilities-cartlines",
+            "runOn": "server"
+        }
+    },
+    "config": {
+        "imageSettings": {
+            "friendlyName": "Cart line item Image Settings",
+            "description": "Image settings for cart line item",
+            "type": "imageSettings"
+        },
+        "rating": {
+            "friendlyName": "product ratings",
+            "description": "Ratings",
+            "type": "number"
+        }
+    },
+    "resources": {
+        "pickUpAtStoreWithLocationText": {
+            "comment": "Text for pick up at store checkbox when location is specified",
+            "value": "Pick up at a store"
+        },
+        "bopisSelectAStore": {
+            "comment": "Header for BOPIS (Buy Online Pickup In Store) dialog",
+            "value": "Select A Store"
+        },
+        "orLabel": {
+            "comment": "The label that shows up between the guest checkout button and the signed-in checkout button, when the application is in an anonymous user state",
+            "value": "OR"
+        },
+        "backToShopping": {
+            "comment": "Back to shopping label",
+            "value": "Back to shopping"
+        },
+        "outOfStockErrorMessageHeader": {
+            "comment": "Display text for Out of stock error message",
+            "value": "There are some issues."
+        },
+        "outOfStockErrorMessage": {
+            "comment": "Display text for Out of stock error message",
+            "value": ": This product is no longer available. Please remove it from the bag."
+        },
+        "cartTitle": {
+            "comment": "Cart title",
+            "value": "Shopping bag"
+        },
+        "emptyCartText": {
+            "comment": "Text for the empty cart",
+            "value": "Your cart is empty."
+        },
+        "failToGetCartText": {
+            "comment": "Text for fail to get cart",
+            "value": "Unable to get cart!"
+        },
+        "removeCartButtonText": {
+            "comment": "Text for the remove button",
+            "value": "Remove"
+        },
+        "cartRemoveButtonAriaLabel": {
+            "comment": "Aria label for the remove button",
+            "value": "Remove {productName}"
+        },
+        "pickUpAtStoreText": {
+            "comment": "Text for pick up at store checkbox",
+            "value": "Pick up at a store "
+        },
+        "waitingClass": {
+            "comment": "CSS class for the waiting class",
+            "value": "waiting waiting-circular waiting-lg"
+        },
+        "decrementButtonAriaLabel": {
+            "comment": "Aria label for the quantity decrease button",
+            "value": "Press to decrease the quantity by 1"
+        },
+        "incrementButtonAriaLabel": {
+            "comment": "Aria label for the quantity increment button",
+            "value": "Press to increment quantity by 1"
+        },
+        "inputQuantityAriaLabel": {
+            "comment": "Aria label for the input quantity",
+            "value": "quantity input"
+        },
+        "discountStringText": {
+            "comment": "string for showing discount off",
+            "value": "Discount "
+        },
+        "saveForLaterText": {
+            "comment": "string to save for later text",
+            "value": "Move to Wishlist"
+        },
+        "nameOfWishlist": {
+            "comment": "string for name of the wishlist",
+            "value": "My Wishlist"
+        },
+        "productDimensionTypeColor": {
+            "comment": "String that corresponds to the Color Product Dimension Type (1)",
+            "value": "Color"
+        },
+        "productDimensionTypeSize": {
+            "comment": "String that corresponds to the Size Product Dimension Type (3)",
+            "value": "Size"
+        },
+        "productDimensionTypeStyle": {
+            "comment": "String that corresponds to the Style Product Dimension Type (4)",
+            "value": "Style"
+        },
+        "productDimensionTypeConfiguration": {
+            "comment": "String that corresponds to the Style Product Dimension Configuration (2)",
+            "value": "Configuration"
+        },
+        "shipInsteadDisplayText": {
+            "comment": "String that corresponds to the ship instead display text",
+            "value": "Ship this item"
+        },
+        "changeStoreDisplayText": {
+            "comment": "String that corresponds to the change store display text",
+            "value": "Change store"
+        },
+        "quantityDisplayText": {
+            "comment": "String that corresponds to the quantity display text",
+            "value": "Quantity"
+        },
+        "shipToAddressDisplayText": {
+            "comment": "String that corresponds to the ship it to an address display text",
+            "value": "Ship to an address"
+        },
+        "pickItUpDisplayText": {
+            "comment": "String that corresponds to the pick it up display text",
+            "value": "Pick this up"
+        },
+        "totalSavingsText": {
+            "comment": "String that corresponds to the total savings display text",
+            "value": "Savings"
+        },
+        "minInventoryMessage": {
+            "comment": "String that corresponds to the Minimum inventory display text",
+            "value": "There is only {0} product left. Please choose quantity"
+        },
+        "originalPriceText": {
+            "comment": "String that corresponds to the original price screen reader text",
+            "value": "Original price"
+        },
+        "currentPriceText": {
+            "comment": "String that corresponds to the current price screen reader text",
+            "value": "Current price"
+        },
+        "cartLoadingErrorMessage": {
+            "comment": "String that corresponds to the error message that is shown when essential data actions fail",
+            "value": "Sorry we are unable to load your cart at this moment, please try again later."
+        },
+        "orderSummaryTitle": {
+            "comment": "Order summary title",
+            "value": "Order summary"
+        },
+        "itemsWithCountLabel": {
+            "comment": "Items with count label",
+            "value": "Subtotal "
+        },
+        "estimatedShippingLabel": {
+            "comment": "Label of shipping",
+            "value": "Estimated Shipping"
+        },
+        "priceFree": {
+            "comment": "Free price text",
+            "value": "Free"
+        },
+        "estimatedTaxLabel": {
+            "comment": "Label of estimated tax",
+            "value": "Estimated Tax"
+        },
+        "totalAmountLabel": {
+            "comment": "Label of total amount",
+            "value": "Amount due "
+        },
+        "totalSavings": {
+            "comment": "String associated with Total Savings display text",
+            "value": "Total savings "
+        },
+        "conditionsText": {
+            "comment": "String associated with Legal disclaimer for order total display text",
+            "value": "*Before applicable taxes"
+        },
+        "yetToBeCalculatedText": {
+            "comment": "String associated with to be calculated display text",
+            "value": "To be calculated"
+        },
+        "orderTotal": {
+            "comment": "String associated with order total line display text",
+            "value": "Total"
+        },
+        "notApplicationForCartOrderSummary": {
+            "comment": "String associated with order total line display text",
+            "value": "Not applicable"
+        },
+        "totalDiscountsLabel": {
+            "comment": "Label of total discounts",
+            "value": "Total discounts"
+        },
+        "guestCheckoutButtonTitle": {
+            "comment": "Label for guest checkout button",
+            "value": "Guest Checkout"
+        },
+        "checkoutButtonTitle": {
+            "comment": "Label for checkout button",
+            "value": "Checkout"
+        },
+        "backToShoppingButtonTitle": {
+            "comment": "Label for back to shopping button",
+            "value": "Back to shopping"
+        },
+        "addToWishlistButtonText": {
+            "comment": "Label for Move to wishlist button",
+            "value": "Move to wishlist"
+        },
+        "removeFromWishlistButtonText": {
+            "comment": "Label for Remove from wishlist button",
+            "value": "Remove from wishlist"
+        },
+        "defaultWishlistName": {
+            "comment": "Label for Default wishlist",
+            "value": "My wishlist"
+        },
+        "promoCodeHeadingText": {
+            "comment": "Heading text for promo code",
+            "value": "Promo code"
+        },
+        "promoPlaceholderText": {
+            "comment": "Promo code placeholder text",
+            "value": "Enter a promo code"
+        },
+        "promoCodeApplyButtonText": {
+            "comment": "Promo code apply button text",
+            "value": "Apply"
+        },
+        "removePromoAriaLabelFormat": {
+            "comment": "Promo aria label format",
+            "value": "{0} {1}"
+        },
+        "removePromoText": {
+            "comment": "Promo code remove button text",
+            "value": "Remove"
+        },
+        "appliedPromoCodeHeadingText": {
+            "comment": "header for applied promo code",
+            "value": "Applied promo codes"
+        },
+        "invalidPromoCodeErrorText": {
+            "comment": "To show invalid promo code message",
+            "value": "Invalid promo code"
+        },
+        "failedToAddPromoCodeErrorText": {
+            "comment": "To show message on fail to add promo code",
+            "value": "Failed to add promo code"
+        },
+        "failedToRemovePromoCodeErrorText": {
+            "comment": "To show message on fail to add promo code",
+            "value": "Failed to remove promo code"
+        },
+        "duplicatePromotionErrorText": {
+            "comment": "Text to be shown when adding a duplicate promotion code",
+            "value": "Promo code already applied"
+        }
+    },
+    "slots": {
+        "storeSelector": {
+            "friendlyName": "Store Selector",
+            "description": "Store Selector to use with the Find In Store component",
+            "max": 1,
+            "min": 0,
+            "allowedTypes": ["store-selector"]
+        }
+    }
+}

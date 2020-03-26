@@ -2,16 +2,16 @@
     "exception": null,
     "pageRoot": {
         "typeName": "core-root",
-        "id": "core-root_kdgzbmy",
+        "id": "core-root_e4nxjkm",
         "friendlyName": "Core root 1",
         "config": {},
         "modules": {
             "htmlHead": [
                 {
-                    "typeName": "product-page-summary",
-                    "id": "product-page-summary",
-                    "friendlyName": "Product Page Summary",
-                    "config": { "title": "Fabrikam Product Detail" }
+                    "typeName": "default-page-summary",
+                    "id": "default-page-summary",
+                    "friendlyName": "Default page summary",
+                    "config": { "title": "Checkout Page" }
                 }
             ],
             "body": [
@@ -24,14 +24,14 @@
                         "header": [
                             {
                                 "typeName": "default-container",
-                                "id": "IDNMAwGxa_r3302ag",
+                                "id": "IDNMAwGxa_qrahza2",
                                 "friendlyName": "Default container",
                                 "config": { "containerType": "fluid", "layout": "stacked", "heading": {}, "childrenWidth": "four" },
                                 "modules": {
                                     "content": [
                                         {
                                             "typeName": "cookie-compliance",
-                                            "id": "IDNMAwGxa_r3302ag-cookie-compliance",
+                                            "id": "IDNMAwGxa_qrahza2-cookie-compliance",
                                             "friendlyName": "Cookie compliance",
                                             "config": {
                                                 "content": "<p>This site uses cookies for analytics and personalized content. Accept to continue.&nbsp;</p>\n",
@@ -49,7 +49,7 @@
                                         },
                                         {
                                             "typeName": "promo-banner",
-                                            "id": "IDNMAwGxa_r3302ag-promo-banner",
+                                            "id": "IDNMAwGxa_qrahza2-promo-banner",
                                             "friendlyName": "Promo banner",
                                             "platform": { "layout": "mediumWidth" },
                                             "config": {
@@ -63,7 +63,7 @@
                                         },
                                         {
                                             "typeName": "header",
-                                            "id": "IDNMAwGxa_r3302ag-header",
+                                            "id": "IDNMAwGxa_qrahza2-header",
                                             "friendlyName": "Header",
                                             "config": {
                                                 "logoImage": {
@@ -102,7 +102,7 @@
                                                 "menuBar": [
                                                     {
                                                         "typeName": "navigation-menu",
-                                                        "id": "IDNMAwGxa_r3302ag-navigation-menu",
+                                                        "id": "IDNMAwGxa_qrahza2-navigation-menu",
                                                         "friendlyName": "Navigation menu",
                                                         "config": {
                                                             "navigationMenuSource": "all",
@@ -151,7 +151,7 @@
                                                 "search": [
                                                     {
                                                         "typeName": "search",
-                                                        "id": "IDNMAwGxa_r3302ag-search",
+                                                        "id": "IDNMAwGxa_qrahza2-search",
                                                         "friendlyName": "Search",
                                                         "config": { "topResultsCount": 5.0, "imageSettings": {} }
                                                     }
@@ -162,128 +162,10 @@
                                 }
                             }
                         ],
-                        "primary": [
-                            {
-                                "typeName": "default-container",
-                                "id": "default-container",
-                                "friendlyName": "Container",
-                                "config": { "containerType": "container", "layout": "stacked", "heading": {}, "childrenWidth": "four" },
-                                "modules": {
-                                    "content": [
-                                        {
-                                            "typeName": "buybox",
-                                            "id": "buybox",
-                                            "friendlyName": "Buybox",
-                                            "config": { "titleHeadingTag": "h1" },
-                                            "modules": {
-                                                "mediaGallery": [
-                                                    {
-                                                        "typeName": "media-gallery",
-                                                        "id": "media-gallery",
-                                                        "friendlyName": "Media gallery",
-                                                        "config": {
-                                                            "thumbnailsOrientation": "horizontal",
-                                                            "thumbnailImageSettings": {
-                                                                "quality": 80,
-                                                                "lazyload": true,
-                                                                "viewports": {
-                                                                    "sm": { "w": 100, "h": 0, "q": "w=100&h=0&q=80&m=6&f=jpg" },
-                                                                    "lg": { "w": 100, "h": 0, "q": "w=100&h=0&q=80&m=6&f=jpg" },
-                                                                    "xl": { "w": 100, "h": 0, "q": "w=100&h=0&q=80&m=6&f=jpg" }
-                                                                }
-                                                            },
-                                                            "galleryImageSettings": {
-                                                                "quality": 80,
-                                                                "lazyload": true,
-                                                                "viewports": {
-                                                                    "xs": { "w": 767, "h": 767, "q": "w=767&h=767&q=80&m=6&f=jpg" },
-                                                                    "sm": { "w": 600, "h": 600, "q": "w=600&h=600&q=80&m=6&f=jpg" },
-                                                                    "md": { "w": 600, "h": 772, "q": "w=600&h=772&q=80&m=6&f=jpg" },
-                                                                    "lg": { "w": 0, "h": 772, "q": "w=0&h=772&q=80&m=6&f=jpg" },
-                                                                    "xl": { "w": 0, "h": 772, "q": "w=0&h=772&q=80&m=6&f=jpg" }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                ],
-                                                "storeSelector": [
-                                                    {
-                                                        "typeName": "store-selector",
-                                                        "id": "store-selector",
-                                                        "friendlyName": "Store selector",
-                                                        "config": {
-                                                            "lookupRadius": 50.0,
-                                                            "termsOfServiceLink": {
-                                                                "linkText": "Microsoft Bing Maps Terms",
-                                                                "linkUrl": {
-                                                                    "destinationUrl": "https://www.microsoft.com/en-us/maps/product/terms-april-2011",
-                                                                    "type": "externalLink"
-                                                                },
-                                                                "openInNewTab": true
-                                                            }
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "typeName": "product-specification",
-                                            "id": "product-specification__0",
-                                            "friendlyName": "Product specification 1",
-                                            "config": { "heading": { "text": "Heading", "tag": "h2" } }
-                                        },
-                                        {
-                                            "typeName": "product-collection",
-                                            "id": "product-collection__1",
-                                            "friendlyName": "Product collection 2",
-                                            "platform": { "layout": "mediumWidth" },
-                                            "config": {
-                                                "msdyn365__moduleLayout": "mediumWidth",
-                                                "productCollection": {
-                                                    "recommendationListId": "bestselling",
-                                                    "pageSize": 10,
-                                                    "listType": "recommendation"
-                                                },
-                                                "heading": { "text": "Trending", "tag": "h2" },
-                                                "layout": "carousel",
-                                                "imageSettings": {
-                                                    "quality": 80,
-                                                    "lazyload": true,
-                                                    "viewports": {
-                                                        "xs": { "w": 315, "h": 315, "q": "w=315&h=315&q=80&m=6&f=jpg" },
-                                                        "lg": { "w": 315, "h": 315, "q": "w=315&h=315&q=80&m=6&f=jpg" },
-                                                        "xl": { "w": 315, "h": 315, "q": "w=315&h=315&q=80&m=6&f=jpg" }
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        { "typeName": "spacer", "id": "spacer__0", "friendlyName": "Spacer 1", "config": {} },
-                                        {
-                                            "typeName": "ratings-histogram",
-                                            "id": "ratings-histogram__0",
-                                            "friendlyName": "Ratings histogram 1",
-                                            "config": { "heading": { "text": "Heading", "tag": "h2" } }
-                                        },
-                                        {
-                                            "typeName": "reviews-list",
-                                            "id": "reviews-list__0",
-                                            "friendlyName": "Reviews list 1",
-                                            "config": { "heading": {}, "reviewsShownOnEachPage": 10.0 }
-                                        },
-                                        {
-                                            "typeName": "write-review",
-                                            "id": "write-review__0",
-                                            "friendlyName": "Write review 1",
-                                            "config": { "heading": {} }
-                                        }
-                                    ]
-                                }
-                            }
-                        ],
                         "footer": [
                             {
                                 "typeName": "default-container",
-                                "id": "IDNMAxJzO_bzrh8ms",
+                                "id": "default-container",
                                 "friendlyName": "Default container",
                                 "config": {
                                     "containerType": "container",
@@ -296,14 +178,14 @@
                                     "content": [
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category",
+                                            "id": "default-container-footer-category",
                                             "friendlyName": "Footer category",
                                             "config": { "categoryClassName": "nav-item" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item",
+                                                        "id": "default-container-footer-item",
                                                         "friendlyName": "Footer item",
                                                         "config": {
                                                             "heading": { "text": "Customer Service", "tag": "h2" },
@@ -312,7 +194,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__0",
+                                                        "id": "default-container-footer-item__0",
                                                         "friendlyName": "Footer item 1",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -329,7 +211,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__1",
+                                                        "id": "default-container-footer-item__1",
                                                         "friendlyName": "Footer item 2",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -346,7 +228,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__2",
+                                                        "id": "default-container-footer-item__2",
                                                         "friendlyName": "Footer item 3",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -363,7 +245,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__15",
+                                                        "id": "default-container-footer-item__15",
                                                         "friendlyName": "Footer item 16",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -379,7 +261,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__16",
+                                                        "id": "default-container-footer-item__16",
                                                         "friendlyName": "Footer item 17",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -398,14 +280,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__0",
+                                            "id": "default-container-footer-category__0",
                                             "friendlyName": "Footer category 1",
                                             "config": { "categoryClassName": "nav-item" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__3",
+                                                        "id": "default-container-footer-item__3",
                                                         "friendlyName": "Footer item 4",
                                                         "config": {
                                                             "heading": { "text": "Our Stores", "tag": "h2" },
@@ -414,7 +296,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__4",
+                                                        "id": "default-container-footer-item__4",
                                                         "friendlyName": "Footer item 5",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -431,7 +313,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__5",
+                                                        "id": "default-container-footer-item__5",
                                                         "friendlyName": "Footer item 6",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -448,7 +330,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__6",
+                                                        "id": "default-container-footer-item__6",
                                                         "friendlyName": "Footer item 7",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -468,14 +350,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__1",
+                                            "id": "default-container-footer-category__1",
                                             "friendlyName": "Footer category 2",
                                             "config": { "categoryClassName": "nav-item" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__7",
+                                                        "id": "default-container-footer-item__7",
                                                         "friendlyName": "Footer item 8",
                                                         "config": {
                                                             "heading": { "text": "Store & Support", "tag": "h2" },
@@ -484,7 +366,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__8",
+                                                        "id": "default-container-footer-item__8",
                                                         "friendlyName": "Footer item 9",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -501,7 +383,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__9",
+                                                        "id": "default-container-footer-item__9",
                                                         "friendlyName": "Footer item 10",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -518,7 +400,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__10",
+                                                        "id": "default-container-footer-item__10",
                                                         "friendlyName": "Footer item 11",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -538,14 +420,14 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__2",
+                                            "id": "default-container-footer-category__2",
                                             "friendlyName": "Footer category 3",
                                             "config": { "categoryClassName": "nav-item social-items" },
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__11",
+                                                        "id": "default-container-footer-item__11",
                                                         "friendlyName": "Footer item 12",
                                                         "config": {
                                                             "heading": { "text": "Follow us", "tag": "h2" },
@@ -554,7 +436,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__12",
+                                                        "id": "default-container-footer-item__12",
                                                         "friendlyName": "Footer item 13",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -587,7 +469,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__13",
+                                                        "id": "default-container-footer-item__13",
                                                         "friendlyName": "Footer item 14",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -621,7 +503,7 @@
                                                     },
                                                     {
                                                         "typeName": "footer-item",
-                                                        "id": "IDNMAxJzO_bzrh8ms-footer-item__14",
+                                                        "id": "default-container-footer-item__14",
                                                         "friendlyName": "Footer item 15",
                                                         "config": {
                                                             "heading": { "text": "", "tag": "h2" },
@@ -656,16 +538,117 @@
                                         },
                                         {
                                             "typeName": "footer-category",
-                                            "id": "IDNMAxJzO_bzrh8ms-footer-category__4",
+                                            "id": "default-container-footer-category__4",
                                             "friendlyName": "Footer category 5",
                                             "config": {},
                                             "modules": {
                                                 "content": [
                                                     {
                                                         "typeName": "back-top-footer",
-                                                        "id": "IDNMAxJzO_bzrh8ms-back-top-footer__0",
+                                                        "id": "default-container-back-top-footer__0",
                                                         "friendlyName": "Back to top 1",
                                                         "config": { "destination": "#", "ariaLabel": "Back to top" }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "primary": [
+                            {
+                                "typeName": "default-container",
+                                "id": "default-container__0",
+                                "friendlyName": "Container 1 1",
+                                "config": { "containerType": "container", "layout": "stacked", "heading": {}, "childrenWidth": "twelve" },
+                                "modules": {
+                                    "content": [
+                                        {
+                                            "typeName": "checkout-clone",
+                                            "id": "IDNMAx6y4_d5n0m7n",
+                                            "friendlyName": "Checkout",
+                                            "config": {
+                                                "checkoutHeading": { "text": "Checkout", "tag": "h1" },
+                                                "orderSummaryHeading": { "text": "Order summary", "tag": "h1" },
+                                                "imageSettings": {
+                                                    "quality": 80,
+                                                    "lazyload": true,
+                                                    "viewports": {
+                                                        "xs": { "w": 70, "h": 70, "q": "w=70&h=70&q=80&m=6&f=jpg" },
+                                                        "lg": { "w": 108, "h": 108, "q": "w=108&h=108&q=80&m=6&f=jpg" },
+                                                        "xl": { "w": 108, "h": 108, "q": "w=108&h=108&q=80&m=6&f=jpg" }
+                                                    }
+                                                }
+                                            },
+                                            "modules": {
+                                                "checkoutInformation": [
+                                                    {
+                                                        "typeName": "checkout-shipping-address",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-shipping-address",
+                                                        "friendlyName": "Shipping address",
+                                                        "config": { "heading": { "text": "SHIPPING ADDRESS", "tag": "h2" } }
+                                                    },
+                                                    {
+                                                        "typeName": "checkout-delivery-options",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-delivery-options",
+                                                        "friendlyName": "Delivery options",
+                                                        "config": { "heading": { "text": "DELIVERY OPTION", "tag": "h2" } }
+                                                    },
+                                                    {
+                                                        "typeName": "checkout-section-container",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-section-container",
+                                                        "friendlyName": "Checkout section container",
+                                                        "config": {
+                                                            "heading": { "text": "PAYMENT METHOD", "tag": "h2" },
+                                                            "width": "fluid"
+                                                        },
+                                                        "modules": {
+                                                            "primary": [
+                                                                {
+                                                                    "typeName": "text-block",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-text-block",
+                                                                    "friendlyName": "Text Block",
+                                                                    "config": {
+                                                                        "paragraph": "<p><i><span><span><span><span>Notice: Payment info is for demo purposes only and does not process actual transactions; however, your payment info will be sent to your designated third-party payment provider</span></span></span></span><span><span><span><span>.</span></span></span></span></i></p>\n"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-loyalty",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-loyalty",
+                                                                    "friendlyName": "Loyalty points",
+                                                                    "config": {}
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-gift-card",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-gift-card",
+                                                                    "friendlyName": "Gift card",
+                                                                    "config": {}
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-payment-instrument",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-payment-instrument__0",
+                                                                    "friendlyName": "Credit card",
+                                                                    "config": {
+                                                                        "heading": { "text": "Heading", "tag": "h2" },
+                                                                        "iFrameHeightOverride": 330.0,
+                                                                        "paymentStyleOverride": ".chckt-sdk{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;font-weight:400;font-size:14px;line-height:20px;margin-left:-7px;text-transform:none;color:#323130!important}.chckt-pm,.chckt-pm.chckt-pm-card.js-chckt-pm.chckt-pm--last-child.js-chckt-pm--selected,.chckt-pm__header:hover,.js-chckt-pm--selected{background-color:transparent;background:0 0!important}.chckt-pm__header{background-color:#f8f7f6!important;margin-left:-11px}.chckt-pm__details{background-color:#f8f7f6!important}.chckt-pm__details,.chckt-pm__header{padding-left:0;padding-top:0}.chckt-pm,.chckt-pm.chckt-pm-card.js-chckt-pm.chckt-pm--last-child.js-chckt-pm--selected,.chckt-pm:first-child{border:none}.chckt-form--max-width{max-width:100%}@media only screen and (max-width:400px){.chckt-form{margin-left:auto}.chckt-form--max-width{max-width:unset}}.chckt-input-field{background:#fff;border:1px solid #605e5c;box-sizing:border-box;border-radius:2px;height:32px;padding:6px 8px;font-style: normal;font-weight:400;font-size:14px;line-height:20px}.chckt-form-label{padding-bottom:20px}.chckt-form-label__text{padding-bottom:4px;font-weight:600;font-size:14px;line-height:20px;color:#323130!important}.chckt-input-field.js-chckt-holdername:hover{background:#fff}.chckt-form-label--exp-date{margin-right:20px;width:40%}.chckt-input-field--recurring{background:0 0;padding-left:0}.chckt-form-label--cvc{width:40%}.chckt-form-label__error-text{color:#a80000;font-size:16px;line-height:21px}.chckt-input-field--error{border-left:2px solid #a80000}:first-child.chckt-pm{border-top:none}.chckt-pm__radio-button{height:24px;margin-left:0;margin-right:20px;margin-top:0;padding-top:0;width:24px;position:fixed;opacity:0}.chckt-pm__name{font-weight:600;font-size:20px;line-height:28px;padding-top:0!important;color:#323130!important}.chckt-checkbox{width:16px;height:16px}.chckt-pm-list__button{background:#fff;border:1px solid #4c833a;border-radius:2px;font-size:18px;font-weight:400;height:48px;line-height:24px;padding:12px 20px;text-transform:none;min-width:160px;text-align:center;width:initial}.chckt-pm-list__button:hover{background:#e1efdc}.chckt-more-pm-button__icon{display:none}.chckt-more-pm-button__text{float:none;margin-left:0;margin-top:0;padding-top:0}.chckt-pm__details input[disabled]+span{color:#ccc!important}"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-billing-address",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-billing-address__0",
+                                                                    "friendlyName": "Billing address",
+                                                                    "config": { "heading": { "text": "Heading", "tag": "h2" } }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "checkout-guest-profile",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-guest-profile",
+                                                        "friendlyName": "Contact information",
+                                                        "config": { "heading": { "text": "CONTACT INFORMATION", "tag": "h2" } }
                                                     }
                                                 ]
                                             }
@@ -680,34 +663,34 @@
         }
     },
     "renderingContext": {
-        "requestUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/black-blazer-with-zippered-breast-pocket/68719497542.p",
+        "requestUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/checkout",
         "sitePath": "/fabrikamga",
         "clientIPAddress": "103.72.1.151",
         "clientContext": { "deviceType": "Pc" },
-        "canonicalUrl": null,
+        "canonicalUrl": "https://www.vsicommerceeval.com/fabrikamga/checkout",
         "canonicalDomain": "www.vsicommerceeval.com",
         "staticContext": { "staticCdnUrl": "/_scnr/", "staticCdnUrlWithLocale": "/en-us/_msdyn365/_scnr/" },
         "user": {
-            "token": null,
-            "isAuthenticated": false,
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsifQ.eyJleHAiOjE1ODUyMTg0NzcsIm5iZiI6MTU4NTIxNDg3NywidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kMzY1cGxjLmIyY2xvZ2luLmNvbS82NmJlNTljNS0yZjI5LTQ1MmQtODAyNC0yYWQ2Y2YyZDc3ZDgvdjIuMC8iLCJzdWIiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJhdWQiOiI1ZDkwNjQwZi1kZjZhLTRhMDYtYTVlYi02NTBhZWFjZWQ1ODciLCJub25jZSI6IjYzNzIwODExNTk1NjAxNDczMS5ZamcwWmpBd05tUXRaakZpTXkwMFlUUXdMV0k1Wm1JdE1UQmtPVGxqTVdRd056RmxNV05sTUdNMk1EUXROekJpTkMwME4yRXhMV0ZpT1dNdE56ZzJZVGMyT0RBNE5UWTMiLCJpYXQiOjE1ODUyMTQ4NzcsImF1dGhfdGltZSI6MTU4NTIxNDg3NywiaWRwIjoibGl2ZS5jb20iLCJvaWQiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJlbWFpbHMiOlsiaGFyaXNhaG1lZDMyMUBvdXRsb29rLmNvbSJdLCJnaXZlbl9uYW1lIjoiSGFyaXMiLCJmYW1pbHlfbmFtZSI6IlJhanB1dCIsInRmcCI6IkIyQ18xX3NpZ25pbnVwIiwiY19oYXNoIjoia3dxU216RW5XNDQ2Q1oxZDZ0eFZGUSJ9.kKchAQ0NweTVswqu9IwpmCXkkZOHgtldNdm6lARZELF34T6vK7_0Ngg9gq2cYVMoBytE3OBJeiE2KwznG6G0trxZbMCX-HI-S9cKtxBu4wir1kYtaybZFXX_cJR0Zxp_xJTox-XZom7uuIagjISSodxQlSrUUbzPDhIWyvThwqFDFkY8NcLIEpnBrMstC5hfEk9112nvDRzkxrT-acL0rI0d5UUrTzXf5KGZbUvVZcDWg8trzp5x526zAquIhTq3Q-NVUGybyrZL4J5qqXBtkYX9QQeJJpYcC6k6n-CTVZ44jo8CilHUSZFYCa_oxbe_YPjTtOVQPUBVlbIm1D3uRw",
+            "isAuthenticated": true,
             "signInUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signin",
             "signOutUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signout",
             "signUpUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signup",
             "editProfileUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/editprofile",
-            "signinName": null,
-            "firstName": null,
-            "lastName": null,
-            "optOutWebActivityTracking": null,
-            "tenantId": "",
-            "customerAccountNumber": null,
-            "name": null,
-            "emailAddress": null
+            "signinName": "Haris Rajput",
+            "firstName": "Haris",
+            "lastName": "Rajput",
+            "optOutWebActivityTracking": "False",
+            "tenantId": null,
+            "customerAccountNumber": "004221",
+            "name": "Haris Rajput",
+            "emailAddress": "harisahmed321@outlook.com"
         },
         "previewContext": null,
         "locale": "en-us",
         "textDirection": "ltr",
         "suggestedMarket": null,
-        "urlTokens": { "itemId": "68719497542", "recordId": "68719497542", "pageType": "Product" },
+        "urlTokens": {},
         "apiSettings": {
             "baseUrl": "https://vsicommerceeval5efcca299aa7c8e7ret.cloud.retail.dynamics.com/",
             "channelId": 68719478279,
@@ -724,14 +707,14 @@
         },
         "gridSettings": { "xs": { "w": 767 }, "sm": { "w": 991 }, "md": { "w": 1199 }, "lg": { "w": 1599 }, "xl": { "w": 1600 } },
         "debugMode": 0,
-        "operationId": "face656ace298c47ba0ea3e68d1501fa",
+        "operationId": "3547890ab25a9b42ad035af15e4b4e91",
         "sameSiteRequired": true,
         "features": { "scnr_blob": true, "legacy_getactiveprices": true, "disable_cors": true },
         "telemetrySettings": {
             "doNotCollectBiData": false,
             "eventHubEndPoint": "",
             "eventHubAuthToken": "",
-            "operationId": "face656ace298c47ba0ea3e68d1501fa",
+            "operationId": "3547890ab25a9b42ad035af15e4b4e91",
             "url": "_msdyn365/_scnr/global-statics/static/js/da.0.js"
         }
     },

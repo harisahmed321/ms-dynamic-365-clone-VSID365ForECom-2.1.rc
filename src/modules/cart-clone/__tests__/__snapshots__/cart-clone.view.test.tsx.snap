@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart view unit tests - View renders correctly with all attributes 1`] = `
+<div
+  class="className"
+  data-m-t="mock-type"
+  id="mock-id"
+>
+  <h1>
+    Cart
+  </h1>
+  <div
+    class="node-class-CartlinesWrapper"
+  >
+    <div
+      class="msc-cart-lines-item"
+    >
+      <div>
+        cartline1
+      </div>
+      <button>
+        removecartline1
+      </button>
+    </div>
+    <div
+      class="msc-cart-lines-item"
+    >
+      <div>
+        cartline2
+      </div>
+      <button>
+        removecartline2
+      </button>
+    </div>
+  </div>
+  <div
+    class="node-class-OrderSummaryWrapper"
+  >
+    <h2>
+      Order summary
+    </h2>
+    <div
+      class=""
+    >
+      <p>
+        promo code
+      </p>
+      <span>
+        Subtotal
+      </span>
+      <span>
+        estimatedshipping
+      </span>
+      <span>
+        estimatedtax
+      </span>
+      <span>
+        totalDiscounts
+      </span>
+      <span>
+        ordertotal
+      </span>
+    </div>
+    <button>
+      Checkout
+    </button>
+    <button>
+      Checkout as guest
+    </button>
+    <button>
+      Back to shopping
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Cart view unit tests - View renders correctly with no cartlines 1`] = `
+<div
+  class="className"
+  data-m-t="mock-type"
+  id="mock-id"
+>
+  <h1>
+    Cart
+  </h1>
+  <div
+    class="node-class-CartlinesWrapper"
+  />
+  <div
+    class="node-class-OrderSummaryWrapper"
+  >
+    <h2>
+      Order summary
+    </h2>
+    <div
+      class=""
+    >
+      <p>
+        promo code
+      </p>
+      <span>
+        Subtotal
+      </span>
+      <span>
+        estimatedshipping
+      </span>
+      <span>
+        estimatedtax
+      </span>
+      <span>
+        totalDiscounts
+      </span>
+      <span>
+        ordertotal
+      </span>
+    </div>
+    <button>
+      Checkout as guest
+    </button>
+    <button>
+      Back to shopping
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Cart view unit tests - View renders correctly with no orderSummary lines 1`] = `
+<div
+  class="className"
+  data-m-t="mock-type"
+  id="mock-id"
+>
+  <h1>
+    Cart
+  </h1>
+  <div
+    class="node-class-CartlinesWrapper"
+  />
+  <div
+    class="node-class-OrderSummaryWrapper"
+  >
+    <h2>
+      Order summary
+    </h2>
+    <button>
+      Checkout as guest
+    </button>
+    <button>
+      Back to shopping
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Cart view unit tests - View renders correctly with no orderSummarylines with discount lines 1`] = `
+<div
+  class="className"
+  data-m-t="mock-type"
+  id="mock-id"
+>
+  <h1>
+    Cart
+  </h1>
+  <div
+    class="node-class-CartlinesWrapper"
+  />
+  <div
+    class="node-class-OrderSummaryWrapper"
+  >
+    <h2>
+      Order summary
+    </h2>
+    <div
+      class=""
+    >
+      <p>
+        promo code
+      </p>
+      <span>
+        Subtotal
+      </span>
+      <span>
+        estimatedshipping
+      </span>
+      <span>
+        estimatedtax
+      </span>
+      <span>
+        totalDiscounts
+      </span>
+      <span>
+        ordertotal
+      </span>
+    </div>
+    <button>
+      Checkout as guest
+    </button>
+    <button>
+      Back to shopping
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Cart view unit tests - View renders correctly with no orderSummarylines without discount lines 1`] = `
+<div
+  class="className"
+  data-m-t="mock-type"
+  id="mock-id"
+>
+  <h1>
+    Cart
+  </h1>
+  <div
+    class="node-class-CartlinesWrapper"
+  />
+  <div
+    class="node-class-OrderSummaryWrapper"
+  >
+    <h2>
+      Order summary
+    </h2>
+    <div
+      class=""
+    >
+      <p>
+        promo code
+      </p>
+      <span>
+        Subtotal
+      </span>
+      <span>
+        estimatedshipping
+      </span>
+      <span>
+        estimatedtax
+      </span>
+      <span>
+        ordertotal
+      </span>
+    </div>
+    <button>
+      Checkout as guest
+    </button>
+    <button>
+      Back to shopping
+    </button>
+  </div>
+</div>
+`;

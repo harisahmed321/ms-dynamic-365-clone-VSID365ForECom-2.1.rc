@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart pick up in store renders correctly with a cartline when no store is associated with it 1`] = `
+<div>
+  <label
+    class="msc-cart-line__bopis-shipping"
+  >
+    <input
+      checked=""
+      id="ms-cart-bopis-ship-option-10"
+      name="shippingType 10"
+      type="radio"
+      value="Ship it"
+    />
+    Ship it
+  </label>
+  <label
+    class="msc-cart-line__bopis-store-pickup"
+  >
+    <input
+      id="ms-cart-bopis-pickup-option-10"
+      name="shippingType 10"
+      type="radio"
+      value="Select a store for pickup"
+    />
+    Select a store for pickup
+  </label>
+</div>
+`;
+
+exports[`Cart pick up in store renders correctly with a cartline which has already selected store 1`] = `
+<div>
+  <label
+    class="msc-cart-line__bopis-shipping"
+  >
+    <input
+      id="ms-cart-bopis-ship-option-10"
+      name="shippingType 10"
+      type="radio"
+      value="Ship it"
+    />
+    Ship it
+  </label>
+  <label
+    class="msc-cart-line__bopis-store-pickup"
+  >
+    <input
+      checked=""
+      id="ms-cart-bopis-pickup-option-10"
+      name="shippingType 10"
+      type="radio"
+      value="Select a store for pickup"
+    />
+    Select a store for pickup
+  </label>
+  <div
+    class="msc-cart-line__bopis__fullfilment"
+  >
+    <span
+      class="msc-cart-line__bopis__fullfilment-store"
+    >
+      Bellevue
+    </span>
+    <button
+      class="msc-cart-line__bopis-changestore btn"
+    >
+      Change store
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Cart pick up in store renders correctly with a cartline which has already selected store but orgunitlocations is missing id 1`] = `
+<div>
+  <label
+    class="msc-cart-line__bopis-shipping"
+  >
+    <input
+      id="ms-cart-bopis-ship-option-10"
+      name="shippingType 10"
+      type="radio"
+      value="Ship it"
+    />
+    Ship it
+  </label>
+  <label
+    class="msc-cart-line__bopis-store-pickup"
+  >
+    <input
+      checked=""
+      id="ms-cart-bopis-pickup-option-10"
+      name="shippingType 10"
+      type="radio"
+      value="Select a store for pickup"
+    />
+    Select a store for pickup
+  </label>
+  <div
+    class="msc-cart-line__bopis__fullfilment"
+  >
+    <span
+      class="msc-cart-line__bopis__fullfilment-store"
+    >
+      Bellevue
+    </span>
+    <button
+      class="msc-cart-line__bopis-changestore btn"
+    >
+      Change store
+    </button>
+  </div>
+</div>
+`;
