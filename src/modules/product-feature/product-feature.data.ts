@@ -4,7 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { AsyncResult, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
+import { SimpleProductWithAvailablility } from '../../actions/get-product-with-availability';
 
 export interface IProductFeatureData {
     product: AsyncResult<SimpleProduct>;
+    simpleProductWithAvailablility: AsyncResult<SimpleProductWithAvailablility>;
 }
