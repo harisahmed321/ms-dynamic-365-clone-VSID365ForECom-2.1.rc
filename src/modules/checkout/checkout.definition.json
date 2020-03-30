@@ -1,0 +1,219 @@
+{
+	"$type": "containerModule",
+	"friendlyName": "Checkout (COPY)",
+	"name": "checkout",
+	"description": "Checkout captures the information needed to place an order and allows the user to place an order.",
+	"categories": [
+		"Purchase"
+	],
+	"dataActions": {
+		"checkout": {
+			"path": "@msdyn365-commerce/global-state/dist/lib/data-actions/checkout-state-data-action",
+			"runOn": "client"
+		},
+		"products": {
+			"path": "./actions/get-products-in-active-cart",
+			"runOn": "client"
+		},
+		"orgUnitLocations": {
+			"path": "@msdyn365-commerce-modules/retail-actions/dist/lib/search-org-unit-locations",
+			"runOn": "client"
+		}
+	},
+	"config": {
+		"checkoutHeading": {
+			"friendlyName": "Checkout heading",
+			"description": "Checkout heading",
+			"$ref": "@msdyn365-commerce-modules/definitions/dist/src/Heading.json#/definitions/heading"
+		},
+		"lineItemsHeading": {
+			"friendlyName": "Line items heading",
+			"description": "Line items heading",
+			"$ref": "@msdyn365-commerce-modules/definitions/dist/src/Heading.json#/definitions/heading"
+		},
+		"orderSummaryHeading": {
+			"friendlyName": "Order summary heading",
+			"description": "Order summary heading",
+			"$ref": "@msdyn365-commerce-modules/definitions/dist/src/Heading.json#/definitions/heading"
+		},
+		"disableGuidedCheckoutFlow": {
+			"friendlyName": "Disable guided checkout flow",
+			"description": "Disable guided checkout flow",
+			"type": "boolean",
+			"default": false,
+			"required": false,
+			"scope": "module"
+		},
+		"imageSettings": {
+			"friendlyName": "Cart line item image settings",
+			"description": "Image settings for cart line items",
+			"type": "imageSettings"
+		},
+		"className": {
+			"friendlyName": "Custom CSS class name",
+			"description": "Provide a custom css class name defined in the theme pack to target the CSS for this module",
+			"type": "string",
+			"default": ""
+		}
+	},
+	"resources": {
+		"checkoutStepTitleFormat": {
+			"comment": "Title of shipping address section",
+			"value": "{stepNumber}. {stepTitle}"
+		},
+		"saveBtnLabel": {
+			"comment": "Save button label",
+			"value": "Save"
+		},
+		"saveAndContinueBtnLabel": {
+			"comment": "Save and continue button label",
+			"value": "Save & continue"
+		},
+		"changeBtnLabel": {
+			"comment": "Change button label",
+			"value": "Change"
+		},
+		"cancelBtnLabel": {
+			"comment": "Cancel button label",
+			"value": "Cancel"
+		},
+		"genericErrorMessage": {
+			"comment": "Generic error message",
+			"value": "Something went wrong, please try again."
+		},
+		"cookieConsentRequiredMessage": {
+			"comment": "Localized text for cookie consent required message",
+			"value": "Cookie consent required to load this content. See cookie banner on the page for more details."
+		},
+		"backToShopping": {
+			"comment": "Back to shopping label",
+			"value": "Back to shopping"
+		},
+		"placeOrderText": {
+			"comment": "Text for the checkout button to place the order",
+			"value": "Place order"
+		},
+		"discountStringText": {
+			"comment": "string to show discount offer string",
+			"value": "Savings "
+		},
+		"discountOffStringText": {
+			"comment": "string to show discount offer string",
+			"value": "off"
+		},
+		"quantityDisplayString": {
+			"comment": "Quantity of line item",
+			"value": "Quantity"
+		},
+		"productDimensionTypeColor": {
+			"comment": "String that corresponds to the Color Product Dimension Type (1)",
+			"value": "Color"
+		},
+		"productDimensionTypeSize": {
+			"comment": "String that corresponds to the Size Product Dimension Type (3)",
+			"value": "Size"
+		},
+		"productDimensionTypeStyle": {
+			"comment": "String that corresponds to the Style Product Dimension Type (4)",
+			"value": "Style"
+		},
+		"itemLabel": {
+			"comment": "Item label",
+			"value": "item"
+		},
+		"itemsLabel": {
+			"comment": "Items label",
+			"value": "items"
+		},
+		"inStorePickUpLabel": {
+			"comment": "In store pickup label",
+			"value": "In-store pickup ({count} {suffix})"
+		},
+		"shippingCountCheckoutLineItem": {
+			"comment": "Shipping label",
+			"value": "Shipping ({count} {suffix})"
+		},
+		"pickUpAtStoreWithLocationText": {
+			"comment": "Text for pick up at store checkbox when location is specified",
+			"value": "Pick up at a store "
+		},
+		"editCartText": {
+			"comment": "Edit cart text",
+			"value": "Edit Cart"
+		},
+		"configString": {
+			"comment": "Configuration text",
+			"value": "Configuration"
+		},
+		"subTotalLabel": {
+			"comment": "Items with count label",
+			"value": "Subtotal"
+		},
+		"shippingLabel": {
+			"comment": "Label of shipping",
+			"value": "Shipping"
+		},
+		"freeText": {
+			"comment": "Free price text",
+			"value": "Free"
+		},
+		"taxLabel": {
+			"comment": "Label of estimated tax",
+			"value": "Tax"
+		},
+		"loyaltyLabel": {
+			"comment": "Label of loyalty rewards",
+			"value": "Loyalty rewards"
+		},
+		"giftcardLabel": {
+			"comment": "Label of gift card",
+			"value": "Gift card"
+		},
+		"totalAmountLabel": {
+			"comment": "Label of total amount",
+			"value": "Amount due"
+		},
+		"totalSavingsLabel": {
+			"comment": "Label of total savings",
+			"value": "Total savings"
+		},
+		"orderTotalLabel": {
+			"comment": "Label for total order amount",
+			"value": "Total"
+		},
+		"totalDiscountsLabel": {
+			"comment": "Label of total discounts",
+			"value": "Total discounts"
+		},
+		"toBeCalculatedText": {
+			"comment": "Label of to be calculated",
+			"value": "To be calculated"
+		},
+		"inputQuantityAriaLabel": {
+			"comment": "Aria label for the input quantity",
+			"value": "quantity input"
+		}
+	},
+	"slots": {
+		"checkoutInformation": {
+			"friendlyName": "Checkout Information",
+			"description": "This contains the checkout information like shipping address, payment instrument and etc. This content is in the left slot ",
+			"max": 10,
+			"min": 1,
+			"allowedTypes": [
+				"checkout-shipping-address",
+				"checkout-billing-address",
+				"checkout-guest-profile",
+				"checkout-delivery-options",
+				"checkout-gift-card",
+				"checkout-loyalty",
+				"checkout-section-container",
+				"checkout-payment-instrument",
+				"text-block"
+			],
+			"allowedCategories": [
+				"checkout-information-modules"
+			]
+		}
+	}
+}

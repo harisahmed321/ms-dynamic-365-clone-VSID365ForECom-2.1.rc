@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout unit tests - PlaceOrderButton renders correctly 1`] = `
+<Button
+  className="ms-checkout__btn-place-order"
+  color="primary"
+  disabled={false}
+  onClick={[Function]}
+  outline={false}
+  tag="button"
+>
+  Place order
+</Button>
+`;
+
+exports[`Checkout unit tests - PlaceOrderButton renders correctly when canPlaceOrder is false 1`] = `
+<Button
+  className="ms-checkout__btn-place-order"
+  color="primary"
+  disabled={true}
+  onClick={[Function]}
+  outline={false}
+  tag="button"
+>
+  Place order
+</Button>
+`;

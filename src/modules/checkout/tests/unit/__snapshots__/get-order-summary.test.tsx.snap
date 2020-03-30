@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout unit tests - getOrderSummary renders correctly when it get an empty cart 1`] = `
+Object {
+  "heading": <Heading
+    className="msc-order-summary__heading"
+    headingTag="h2"
+    text="Order summary"
+  />,
+  "lines": undefined,
+  "orderSummaryProps": Object {
+    "className": "ms-checkout-guest-profile__selected-item",
+  },
+}
+`;
+
+exports[`Checkout unit tests - getOrderSummary renders correctly with valid cart 1`] = `
+Object {
+  "heading": <Heading
+    className="msc-order-summary__heading"
+    headingTag="h2"
+    text="Order summary"
+  />,
+  "lines": "{OrderSummary}",
+  "orderSummaryProps": Object {
+    "className": "ms-checkout-guest-profile__selected-item",
+  },
+}
+`;

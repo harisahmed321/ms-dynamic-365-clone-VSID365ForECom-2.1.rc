@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout renders correctly when cart is loading 1`] = `
+<div
+  class="ms-checkout mock-class"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-checkout__head"
+  >
+    <h1
+      class="ms-checkout__title"
+    >
+      Checkout
+    </h1>
+  </div>
+  <div
+    class="ms-checkout__body"
+  >
+    <div
+      class="msc-waiting msc-waiting-circular msc-waiting-lg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Checkout renders correctly when consent is not given 1`] = `
+<div
+  class="ms-checkout mock-class"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-checkout__head"
+  >
+    <h1
+      class="ms-checkout__title"
+    >
+      Checkout
+    </h1>
+  </div>
+  <div
+    class="ms-checkout__body"
+  >
+    <p
+      aria-live="assertive"
+      class="ms-checkout__error-message"
+      role="alert"
+    >
+      Cookie consent required to load this content. See cookie banner on the page for more details.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Checkout renders correctly when it failed to fetch cart 1`] = `
+<div
+  class="ms-checkout mock-class"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-checkout__head"
+  >
+    <h1
+      class="ms-checkout__title"
+    >
+      Checkout
+    </h1>
+  </div>
+  <div
+    class="ms-checkout__body"
+  >
+    <p
+      aria-live="assertive"
+      class="ms-checkout__error-message"
+      role="alert"
+    >
+      Something went wrong, please try again.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Checkout renders correctly when it get a valid cart 1`] = `
+<div
+  class="ms-checkout mock-class"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-checkout__head"
+  >
+    <h1
+      class="ms-checkout__title"
+    >
+      Checkout
+    </h1>
+  </div>
+  <div
+    class="ms-checkout__body"
+  >
+    <div
+      class="ms-checkout__main"
+    >
+      <div
+        class="ms-checkout__main-control"
+      >
+        <button
+          class="ms-checkout__btn-place-order msc-btn btn-primary disabled"
+          disabled=""
+          type="button"
+        >
+          Place order
+        </button>
+        <a
+          class="ms-checkout__btn-keep-shopping msc-btn msc-btn btn-secondary"
+          href="/home"
+          title="Back to shopping"
+        >
+          Back to shopping
+        </a>
+      </div>
+    </div>
+    <div
+      class="ms-checkout__side"
+    >
+      <div
+        class="msc-order-summary-wrapper"
+      >
+        <h2
+          class="msc-order-summary__heading"
+        >
+          Order summary
+        </h2>
+        <div
+          class="msc-order-summary__items"
+        >
+          <p
+            class="msc-order-summary__line-net-price"
+          >
+            <span
+              class="msc-order-summary__label"
+            >
+              Subtotal
+            </span>
+            <span
+              class="msc-order-summary__value"
+            >
+              To be calculated
+            </span>
+          </p>
+          <p
+            class="msc-order-summary__line-shipping"
+          >
+            <span
+              class="msc-order-summary__label"
+            >
+              Shipping
+            </span>
+            <span
+              class="msc-order-summary__value"
+            >
+              To be calculated
+            </span>
+          </p>
+          <p
+            class="msc-order-summary__line-tax-amount"
+          >
+            <span
+              class="msc-order-summary__label"
+            >
+              Tax
+            </span>
+            <span
+              class="msc-order-summary__value"
+            >
+              To be calculated
+            </span>
+          </p>
+          <p
+            class="msc-order-summary__line-total"
+          >
+            <span
+              class="msc-order-summary__label"
+            >
+              Order total
+            </span>
+            <span
+              class="msc-price msc-order-summary__value"
+            >
+              <span
+                class="msc-price__actual"
+                itemprop="price"
+              >
+                $100.00
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="ms-checkout__side-control-first"
+      >
+        <button
+          class="ms-checkout__btn-place-order msc-btn btn-primary disabled"
+          disabled=""
+          type="button"
+        >
+          Place order
+        </button>
+        <a
+          class="ms-checkout__btn-keep-shopping msc-btn msc-btn btn-secondary"
+          href="/home"
+          title="Back to shopping"
+        >
+          Back to shopping
+        </a>
+      </div>
+      <div
+        class="ms-checkout__line-items"
+      >
+        <div
+          class="ms-checkout__line-items-header"
+        >
+          <h2
+            class="ms-checkout__line-items-heading"
+          >
+            Shopping bag
+          </h2>
+          <a
+            class="ms-checkout__line-items-edit-cart-link msc-btn btn-link"
+            href="/cart"
+            title="Edit cart"
+          >
+            Edit cart
+          </a>
+        </div>
+        <div
+          class="ms-checkout__line-items-delivery-group ship"
+        >
+          <div
+            class="ms-checkout__line-items-group-title"
+          >
+            Shipping (2 items)
+          </div>
+          <div
+            class="ms-checkout__line-items-list"
+          >
+            <div
+              class="ms-checkout__line-item"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="ms-checkout__side-control-second"
+      >
+        <button
+          class="ms-checkout__btn-place-order msc-btn btn-primary disabled"
+          disabled=""
+          type="button"
+        >
+          Place order
+        </button>
+        <a
+          class="ms-checkout__btn-keep-shopping msc-btn msc-btn btn-secondary"
+          href="/home"
+          title="Back to shopping"
+        >
+          Back to shopping
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Checkout renders correctly when it get an empty cart 1`] = `
+<div
+  class="ms-checkout mock-class"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-checkout__head"
+  >
+    <h1
+      class="ms-checkout__title"
+    >
+      Checkout
+    </h1>
+  </div>
+  <div
+    class="ms-checkout__body"
+  >
+    <div
+      class="msc-waiting msc-waiting-circular msc-waiting-lg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Checkout renders correctly when it get an empty cart object 1`] = `
+<div
+  class="ms-checkout mock-class"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-checkout__head"
+  >
+    <h1
+      class="ms-checkout__title"
+    >
+      Checkout
+    </h1>
+  </div>
+  <div
+    class="ms-checkout__body"
+  >
+    <p
+      aria-live="assertive"
+      class="ms-checkout__error-message"
+      role="alert"
+    >
+      Something went wrong, please try again.
+    </p>
+  </div>
+</div>
+`;

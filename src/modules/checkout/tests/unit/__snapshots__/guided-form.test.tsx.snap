@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout unit tests - Guided card renders correctly 1`] = `
+<div
+  className="ms-checkout__guided-form"
+>
+  <CheckoutGuidedCard
+    disabled={false}
+    isActive={true}
+    isExpanded={true}
+    isVisted={false}
+    key="mock-item-1"
+    onNext={[Function]}
+    resource={
+      Object {
+        "backToShopping": "Back to shopping",
+        "cancelBtnLabel": "Cancel",
+        "changeBtnLabel": "Change",
+        "checkoutStepTitleFormat": "{stepNumber}. {stepTitle}",
+        "configString": "Configuration",
+        "cookieConsentRequiredMessage": "Cookie consent required to load this content. See cookie banner on the page for more details.",
+        "discountOffStringText": "off",
+        "discountStringText": "Savings",
+        "editCartText": "Edit cart",
+        "freeText": "FREE",
+        "genericErrorMessage": "Something went wrong, please try again.",
+        "giftcardLabel": "Gift card",
+        "inStorePickUpLabel": "In-store pickup ({count} {suffix})",
+        "inputQuantityAriaLabel": "quantity input",
+        "itemLabel": "item",
+        "itemsLabel": "items",
+        "loyaltyLabel": "Loyalty",
+        "orderTotalLabel": "Order total",
+        "pickUpAtStoreWithLocationText": "Pick up in a store",
+        "placeOrderText": "Place order",
+        "productDimensionTypeColor": "Color",
+        "productDimensionTypeSize": "Size",
+        "productDimensionTypeStyle": "Style",
+        "quantityDisplayString": "Quantity",
+        "saveAndContinueBtnLabel": "Save & continue",
+        "saveBtnLabel": "Save",
+        "shippingCountCheckoutLineItem": "Shipping ({count} {suffix})",
+        "shippingLabel": "Shipping",
+        "subTotalLabel": "Subtotal",
+        "taxLabel": "Tax",
+        "toBeCalculatedText": "To be calculated",
+        "totalAmountLabel": "Total amount",
+        "totalDiscountsLabel": "Total discounts",
+        "totalSavingsLabel": "Total savings",
+      }
+    }
+    step={0}
+    title="mock-heading-1"
+  >
+    <Component
+      config={
+        Object {
+          "heading": "mock-heading-1",
+        }
+      }
+      enableControl={true}
+      id="mock-item-1"
+    />
+  </CheckoutGuidedCard>
+  <CheckoutGuidedCard
+    disabled={false}
+    isActive={false}
+    isExpanded={false}
+    isVisted={false}
+    key="mock-item-2"
+    onNext={[Function]}
+    resource={
+      Object {
+        "backToShopping": "Back to shopping",
+        "cancelBtnLabel": "Cancel",
+        "changeBtnLabel": "Change",
+        "checkoutStepTitleFormat": "{stepNumber}. {stepTitle}",
+        "configString": "Configuration",
+        "cookieConsentRequiredMessage": "Cookie consent required to load this content. See cookie banner on the page for more details.",
+        "discountOffStringText": "off",
+        "discountStringText": "Savings",
+        "editCartText": "Edit cart",
+        "freeText": "FREE",
+        "genericErrorMessage": "Something went wrong, please try again.",
+        "giftcardLabel": "Gift card",
+        "inStorePickUpLabel": "In-store pickup ({count} {suffix})",
+        "inputQuantityAriaLabel": "quantity input",
+        "itemLabel": "item",
+        "itemsLabel": "items",
+        "loyaltyLabel": "Loyalty",
+        "orderTotalLabel": "Order total",
+        "pickUpAtStoreWithLocationText": "Pick up in a store",
+        "placeOrderText": "Place order",
+        "productDimensionTypeColor": "Color",
+        "productDimensionTypeSize": "Size",
+        "productDimensionTypeStyle": "Style",
+        "quantityDisplayString": "Quantity",
+        "saveAndContinueBtnLabel": "Save & continue",
+        "saveBtnLabel": "Save",
+        "shippingCountCheckoutLineItem": "Shipping ({count} {suffix})",
+        "shippingLabel": "Shipping",
+        "subTotalLabel": "Subtotal",
+        "taxLabel": "Tax",
+        "toBeCalculatedText": "To be calculated",
+        "totalAmountLabel": "Total amount",
+        "totalDiscountsLabel": "Total discounts",
+        "totalSavingsLabel": "Total savings",
+      }
+    }
+    step={1}
+    title="mock-heading-2"
+  >
+    <Component
+      config={
+        Object {
+          "heading": "mock-heading-2",
+        }
+      }
+      enableControl={true}
+      id="mock-item-2"
+    />
+  </CheckoutGuidedCard>
+</div>
+`;

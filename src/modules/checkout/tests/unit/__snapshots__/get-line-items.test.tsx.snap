@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout unit tests - getOrderSummary renders correctly with cart with pick up item 1`] = `
+<div
+  class="ms-checkout__line-items"
+>
+  <div
+    class="ms-checkout__line-items-header"
+  >
+    <h2
+      class="ms-checkout__line-items-heading"
+    >
+      Shopping bag
+    </h2>
+    <a
+      class="ms-checkout__line-items-edit-cart-link msc-btn btn-link"
+      href="/cart"
+      title="Edit cart"
+    >
+      Edit cart
+    </a>
+  </div>
+  <div
+    class="ms-checkout__line-items-delivery-group pickup"
+  >
+    <div
+      class="ms-checkout__line-items-group-title"
+    >
+      In-store pickup (1 item)
+    </div>
+    <div
+      class="ms-checkout__line-items-list"
+    >
+      <div
+        class="ms-checkout__line-item"
+      >
+        {LineItems}
+        <div
+          class="ms-checkout__pick-up-at-store"
+        >
+          <span
+            class="ms-checkout__store-label"
+          >
+            Pick up in a store
+          </span>
+          <div
+            class="ms-checkout__store-location"
+          >
+            Seattle
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Checkout unit tests - getOrderSummary renders correctly with cart with pickup and ship item 1`] = `
+<div
+  class="ms-checkout__line-items"
+>
+  <div
+    class="ms-checkout__line-items-header"
+  >
+    <h2
+      class="ms-checkout__line-items-heading"
+    >
+      Shopping bag
+    </h2>
+    <a
+      class="ms-checkout__line-items-edit-cart-link msc-btn btn-link"
+      href="/cart"
+      title="Edit cart"
+    >
+      Edit cart
+    </a>
+  </div>
+  <div
+    class="ms-checkout__line-items-delivery-group pickup"
+  >
+    <div
+      class="ms-checkout__line-items-group-title"
+    >
+      In-store pickup (2 items)
+    </div>
+    <div
+      class="ms-checkout__line-items-list"
+    >
+      <div
+        class="ms-checkout__line-item"
+      >
+        {LineItems}
+        <div
+          class="ms-checkout__pick-up-at-store"
+        >
+          <span
+            class="ms-checkout__store-label"
+          >
+            Pick up in a store
+          </span>
+          <div
+            class="ms-checkout__store-location"
+          >
+            Seattle
+          </div>
+        </div>
+      </div>
+      <div
+        class="ms-checkout__line-item"
+      >
+        {LineItems}
+        <div
+          class="ms-checkout__pick-up-at-store"
+        >
+          <span
+            class="ms-checkout__store-label"
+          >
+            Pick up in a store
+          </span>
+          <div
+            class="ms-checkout__store-location"
+          >
+            Seattle
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ms-checkout__line-items-delivery-group ship"
+  >
+    <div
+      class="ms-checkout__line-items-group-title"
+    >
+      Shipping (1 item)
+    </div>
+    <div
+      class="ms-checkout__line-items-list"
+    >
+      <div
+        class="ms-checkout__line-item"
+      >
+        {LineItems}
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Checkout unit tests - getOrderSummary renders correctly with cart with ship item 1`] = `
+<div
+  class="ms-checkout__line-items"
+>
+  <div
+    class="ms-checkout__line-items-header"
+  >
+    <h2
+      class="ms-checkout__line-items-heading"
+    >
+      Shopping bag
+    </h2>
+    <a
+      class="ms-checkout__line-items-edit-cart-link msc-btn btn-link"
+      href="/cart"
+      title="Edit cart"
+    >
+      Edit cart
+    </a>
+  </div>
+  <div
+    class="ms-checkout__line-items-delivery-group ship"
+  >
+    <div
+      class="ms-checkout__line-items-group-title"
+    >
+      Shipping (2 items)
+    </div>
+    <div
+      class="ms-checkout__line-items-list"
+    >
+      <div
+        class="ms-checkout__line-item"
+      >
+        {LineItems}
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Checkout unit tests - getOrderSummary renders correctly with empty cart 1`] = `
+<div
+  class=""
+>
+  <div
+    class=""
+  />
+</div>
+`;

@@ -1,249 +1,756 @@
 {
     "exception": null,
     "pageRoot": {
-        "pageLayout": null,
-        "title": null,
-        "faviconUrl": null,
-        "bodyClass": "this should be body class",
-        "pageDescription": null,
-        "pageKeywords": null,
-        "canonicalUrl": "https://rushmore.microsoft.com/en-us/cittadesign/demopagev3",
+        "typeName": "core-root",
+        "id": "core-root_e4nxjkm",
+        "friendlyName": "Core root 1",
+        "config": {},
         "modules": {
-            "primary": [
+            "htmlHead": [
                 {
-                    "friendlyName": "Default container 1 1",
-                    "config": {
-                        "renderWithContainer": "container"
-                    },
+                    "typeName": "default-page-summary",
+                    "id": "default-page-summary",
+                    "friendlyName": "Default page summary",
+                    "config": { "title": "Checkout Page" }
+                }
+            ],
+            "body": [
+                {
+                    "typeName": "default-page",
+                    "id": "default-page",
+                    "friendlyName": "Default Page",
+                    "config": { "skipToMainText": "Skip to main content", "pageTheme": "carbon" },
                     "modules": {
-                        "checkoutSummary": [
+                        "header": [
                             {
-                                "id": "checkout-cart-summary-1",
-                                "typeName": "checkout-cart-summary"
-                            },
-                            {
-                                "id": "checkout-place-order-1",
-                                "typeName": "checkout-place-order"
-                            },
-                            {
-                                "id": "checkout-line-items-1",
-                                "typeName": "checkout-line-items"
-                            },
-                            {
-                                "id": "contentrichblockitem-1",
-                                "typeName": "content-rich-block-item"
-                            },
-                            {
-                                "id": "checkout-place-order-2",
-                                "typeName": "checkout-place-order"
-                            }
-                        ],
-                        "checkoutInformation": [
-                            {
-                                "id": "checkout-address-1",
-                                "typeName": "checkout-address"
-                            },
-                            {
-                                "id": "checkout-delivery-options-1",
-                                "typeName": "checkout-delivery-options"
-                            },
-                            {
+                                "typeName": "default-container",
+                                "id": "IDNMAwGxa_qrahza2",
+                                "friendlyName": "Default container",
+                                "config": { "containerType": "fluid", "layout": "stacked", "heading": {}, "childrenWidth": "four" },
                                 "modules": {
-                                    "primary": [
+                                    "content": [
                                         {
-                                            "id": "checkout-gift-card-1",
-                                            "typeName": "checkout-gift-card"
+                                            "typeName": "cookie-compliance",
+                                            "id": "IDNMAwGxa_qrahza2-cookie-compliance",
+                                            "friendlyName": "Cookie compliance",
+                                            "config": {
+                                                "content": "<p>This site uses cookies for analytics and personalized content. Accept to continue.&nbsp;</p>\n",
+                                                "actionLinks": [
+                                                    {
+                                                        "linkText": "Learn more",
+                                                        "linkUrl": {
+                                                            "destinationUrl": "https://go.microsoft.com/fwlink/?linkid=845480",
+                                                            "type": "externalLink"
+                                                        },
+                                                        "ariaLabel": "Learn more about cookie compliance"
+                                                    }
+                                                ]
+                                            }
                                         },
                                         {
-                                            "id": "checkout-payment-instrument-1",
-                                            "typeName": "checkout-payment-instrument"
+                                            "typeName": "promo-banner",
+                                            "id": "IDNMAwGxa_qrahza2-promo-banner",
+                                            "friendlyName": "Promo banner",
+                                            "platform": { "layout": "mediumWidth" },
+                                            "config": {
+                                                "msdyn365__moduleLayout": "mediumWidth",
+                                                "bannerMessages": [{ "text": "Shop for Thanksgiving SALE!!" }],
+                                                "autoplay": false,
+                                                "dismissEnabled": false,
+                                                "hideFlipper": true,
+                                                "className": "alignment__center"
+                                            }
+                                        },
+                                        {
+                                            "typeName": "header",
+                                            "id": "IDNMAwGxa_qrahza2-header",
+                                            "friendlyName": "Header",
+                                            "config": {
+                                                "logoImage": {
+                                                    "$type": "image",
+                                                    "_id": "SAsD4",
+                                                    "src": "https://images-us-sb.cms.commerce.dynamics.com/cms/api/qvngfvszcl/imageFileData/SAsD5",
+                                                    "altText": "Carbon",
+                                                    "copyright": "",
+                                                    "quality": 100,
+                                                    "width": 160,
+                                                    "height": 48,
+                                                    "binaryHash": "ngtpiZanODFp4p7v7xnm4Q==",
+                                                    "title": "Carbon",
+                                                    "imageSettings": { "quality": 80 }
+                                                },
+                                                "logoLink": {
+                                                    "linkText": "",
+                                                    "linkUrl": { "destinationUrl": "/fabrikamga/", "type": "internalLink" },
+                                                    "ariaLabel": "Homepage"
+                                                },
+                                                "myAccountLinks": [
+                                                    {
+                                                        "linkText": "My account",
+                                                        "linkUrl": { "destinationUrl": "/fabrikamga/myaccount", "type": "internalLink" },
+                                                        "ariaLabel": "My account"
+                                                    },
+                                                    {
+                                                        "linkText": "Order history",
+                                                        "linkUrl": {
+                                                            "destinationUrl": "/fabrikamga/carbon-order-history",
+                                                            "type": "internalLink"
+                                                        },
+                                                        "ariaLabel": "Order history"
+                                                    }
+                                                ]
+                                            },
+                                            "data": {},
+                                            "modules": {
+                                                "menuBar": [
+                                                    {
+                                                        "typeName": "navigation-menu",
+                                                        "id": "IDNMAwGxa_qrahza2-navigation-menu",
+                                                        "friendlyName": "Navigation menu",
+                                                        "config": {
+                                                            "navigationMenuSource": "all",
+                                                            "cmsNavItems": [
+                                                                {
+                                                                    "linkText": "Explore Fabrikam",
+                                                                    "linkUrl": {},
+                                                                    "imageLink": {},
+                                                                    "ariaLabel": "Explore Fabrikam",
+                                                                    "subMenus": [
+                                                                        {
+                                                                            "linkText": "Contact Us",
+                                                                            "linkUrl": {
+                                                                                "destinationUrl": "/fabrikamga/",
+                                                                                "type": "internalLink"
+                                                                            },
+                                                                            "ariaLabel": "Contact Us",
+                                                                            "imageLink": {}
+                                                                        },
+                                                                        {
+                                                                            "linkText": "Support",
+                                                                            "linkUrl": {
+                                                                                "destinationUrl": "/fabrikamga/",
+                                                                                "type": "internalLink"
+                                                                            },
+                                                                            "ariaLabel": "Support",
+                                                                            "imageLink": {},
+                                                                            "subMenus": []
+                                                                        },
+                                                                        {
+                                                                            "linkText": "Loyalty program",
+                                                                            "linkUrl": {
+                                                                                "destinationUrl": "/fabrikamga/loyalty-join",
+                                                                                "type": "internalLink"
+                                                                            },
+                                                                            "ariaLabel": "Learn about Loyalty program",
+                                                                            "imageLink": {}
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        "data": {}
+                                                    }
+                                                ],
+                                                "search": [
+                                                    {
+                                                        "typeName": "search",
+                                                        "id": "IDNMAwGxa_qrahza2-search",
+                                                        "friendlyName": "Search",
+                                                        "config": { "topResultsCount": 5.0, "imageSettings": {} }
+                                                    }
+                                                ]
+                                            }
                                         }
                                     ]
-                                },
-                                "id": "checkout-plain-container-1",
-                                "typeName": "checkout-plain-container"
-                            },
-                            {
-                                "id": "guest-profile-1",
-                                "typeName": "checkout-guest-profile"
+                                }
                             }
                         ],
-                        "checkoutPlaceOrder": [
+                        "footer": [
                             {
-                                "id": "checkout-place-order-3",
-                                "typeName": "checkout-place-order"
+                                "typeName": "default-container",
+                                "id": "default-container",
+                                "friendlyName": "Default container",
+                                "config": {
+                                    "containerType": "container",
+                                    "layout": "stacked",
+                                    "heading": {},
+                                    "childrenWidth": "four",
+                                    "className": "ms-footer"
+                                },
+                                "modules": {
+                                    "content": [
+                                        {
+                                            "typeName": "footer-category",
+                                            "id": "default-container-footer-category",
+                                            "friendlyName": "Footer category",
+                                            "config": { "categoryClassName": "nav-item" },
+                                            "modules": {
+                                                "content": [
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item",
+                                                        "friendlyName": "Footer item",
+                                                        "config": {
+                                                            "heading": { "text": "Customer Service", "tag": "h2" },
+                                                            "link": { "linkText": "Link text ", "linkUrl": {} }
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__0",
+                                                        "friendlyName": "Footer item 1",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Contact",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "Contact"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__1",
+                                                        "friendlyName": "Footer item 2",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "FAQ",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "FAQ"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__2",
+                                                        "friendlyName": "Footer item 3",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Delivery & Returns",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "delivery and returns"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__15",
+                                                        "friendlyName": "Footer item 16",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Privacy Policy",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+                                                                    "type": "externalLink"
+                                                                },
+                                                                "ariaLabel": "Privacy policy for Fabrikam"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__16",
+                                                        "friendlyName": "Footer item 17",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Terms and conditions",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/termsandconditions",
+                                                                    "type": "internalLink"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "typeName": "footer-category",
+                                            "id": "default-container-footer-category__0",
+                                            "friendlyName": "Footer category 1",
+                                            "config": { "categoryClassName": "nav-item" },
+                                            "modules": {
+                                                "content": [
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__3",
+                                                        "friendlyName": "Footer item 4",
+                                                        "config": {
+                                                            "heading": { "text": "Our Stores", "tag": "h2" },
+                                                            "link": { "linkText": "Link text ", "linkUrl": {} }
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__4",
+                                                        "friendlyName": "Footer item 5",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Store & Services",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "store and services"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__5",
+                                                        "friendlyName": "Footer item 6",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Store & Hours",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "store and hours"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__6",
+                                                        "friendlyName": "Footer item 7",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Store events",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "store events"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "typeName": "footer-category",
+                                            "id": "default-container-footer-category__1",
+                                            "friendlyName": "Footer category 2",
+                                            "config": { "categoryClassName": "nav-item" },
+                                            "modules": {
+                                                "content": [
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__7",
+                                                        "friendlyName": "Footer item 8",
+                                                        "config": {
+                                                            "heading": { "text": "Store & Support", "tag": "h2" },
+                                                            "link": { "linkText": "Link text ", "linkUrl": {} }
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__8",
+                                                        "friendlyName": "Footer item 9",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Your accounts",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "your account"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__9",
+                                                        "friendlyName": "Footer item 10",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Your orders",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "your orders"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__10",
+                                                        "friendlyName": "Footer item 11",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "Shipping rates",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "type": "internalLink"
+                                                                },
+                                                                "ariaLabel": "shipping rates"
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "typeName": "footer-category",
+                                            "id": "default-container-footer-category__2",
+                                            "friendlyName": "Footer category 3",
+                                            "config": { "categoryClassName": "nav-item social-items" },
+                                            "modules": {
+                                                "content": [
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__11",
+                                                        "friendlyName": "Footer item 12",
+                                                        "config": {
+                                                            "heading": { "text": "Follow us", "tag": "h2" },
+                                                            "link": { "linkText": "Link text ", "linkUrl": {} }
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__12",
+                                                        "friendlyName": "Footer item 13",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "https://www.facebook.com/",
+                                                                    "type": "externalLink"
+                                                                },
+                                                                "ariaLabel": "facebook",
+                                                                "openInNewTab": true
+                                                            },
+                                                            "image": {
+                                                                "$type": "image",
+                                                                "_id": "SAd1Q",
+                                                                "src": "https://images-us-sb.cms.commerce.dynamics.com/cms/api/qvngfvszcl/imageFileData/SAd1R",
+                                                                "copyright": "",
+                                                                "altText": "Facebook",
+                                                                "binaryHash": "eSssNLV3QebTU/R0wA1ZQA==",
+                                                                "location": {},
+                                                                "quality": 99,
+                                                                "width": 48,
+                                                                "height": 48,
+                                                                "caption": "Facebook",
+                                                                "title": "Facebook",
+                                                                "imageSettings": { "disableLazyLoad": true, "quality": 80 }
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__13",
+                                                        "friendlyName": "Footer item 14",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "https://twitter.com/",
+                                                                    "type": "externalLink"
+                                                                },
+                                                                "ariaLabel": "twitter",
+                                                                "openInNewTab": true
+                                                            },
+                                                            "image": {
+                                                                "$type": "image",
+                                                                "_id": "SAd1W",
+                                                                "src": "https://images-us-sb.cms.commerce.dynamics.com/cms/api/qvngfvszcl/imageFileData/SAd1X",
+                                                                "copyright": "",
+                                                                "photographer": "multiple assets ",
+                                                                "altText": "Twitter",
+                                                                "binaryHash": "x/thwGAjcoA078mylVnrig==",
+                                                                "location": {},
+                                                                "quality": 99,
+                                                                "width": 48,
+                                                                "height": 48,
+                                                                "caption": "Twitter",
+                                                                "title": "Twitter",
+                                                                "imageSettings": { "disableLazyLoad": true, "quality": 80 }
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    },
+                                                    {
+                                                        "typeName": "footer-item",
+                                                        "id": "default-container-footer-item__14",
+                                                        "friendlyName": "Footer item 15",
+                                                        "config": {
+                                                            "heading": { "text": "", "tag": "h2" },
+                                                            "link": {
+                                                                "linkText": "",
+                                                                "linkUrl": {
+                                                                    "destinationUrl": "https://www.instagram.com/",
+                                                                    "type": "externalLink"
+                                                                },
+                                                                "openInNewTab": true
+                                                            },
+                                                            "image": {
+                                                                "$type": "image",
+                                                                "_id": "SAd1T",
+                                                                "src": "https://images-us-sb.cms.commerce.dynamics.com/cms/api/qvngfvszcl/imageFileData/SAd1U",
+                                                                "copyright": "",
+                                                                "altText": "Instagram",
+                                                                "binaryHash": "GyWvoIQDWXVgg2Z+eTu9kQ==",
+                                                                "location": {},
+                                                                "quality": 99,
+                                                                "width": 48,
+                                                                "height": 48,
+                                                                "caption": "Instagram",
+                                                                "title": "Instagram",
+                                                                "imageSettings": { "disableLazyLoad": true, "quality": 80 }
+                                                            }
+                                                        },
+                                                        "data": {}
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "typeName": "footer-category",
+                                            "id": "default-container-footer-category__4",
+                                            "friendlyName": "Footer category 5",
+                                            "config": {},
+                                            "modules": {
+                                                "content": [
+                                                    {
+                                                        "typeName": "back-top-footer",
+                                                        "id": "default-container-back-top-footer__0",
+                                                        "friendlyName": "Back to top 1",
+                                                        "config": { "destination": "#", "ariaLabel": "Back to top" }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "primary": [
+                            {
+                                "typeName": "default-container",
+                                "id": "default-container__0",
+                                "friendlyName": "Container 1 1",
+                                "config": { "containerType": "container", "layout": "stacked", "heading": {}, "childrenWidth": "twelve" },
+                                "modules": {
+                                    "content": [
+                                        {
+                                            "typeName": "checkout",
+                                            "id": "IDNMAx6y4_d5n0m7n",
+                                            "friendlyName": "Checkout",
+                                            "config": {
+                                                "checkoutHeading": { "text": "Checkout", "tag": "h1" },
+                                                "orderSummaryHeading": { "text": "Order summary", "tag": "h1" },
+                                                "imageSettings": {
+                                                    "quality": 80,
+                                                    "lazyload": true,
+                                                    "viewports": {
+                                                        "xs": { "w": 70, "h": 70, "q": "w=70&h=70&q=80&m=6&f=jpg" },
+                                                        "lg": { "w": 108, "h": 108, "q": "w=108&h=108&q=80&m=6&f=jpg" },
+                                                        "xl": { "w": 108, "h": 108, "q": "w=108&h=108&q=80&m=6&f=jpg" }
+                                                    }
+                                                }
+                                            },
+                                            "modules": {
+                                                "checkoutInformation": [
+                                                    {
+                                                        "typeName": "checkout-shipping-address",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-shipping-address",
+                                                        "friendlyName": "Shipping address",
+                                                        "config": { "heading": { "text": "SHIPPING ADDRESS", "tag": "h2" } }
+                                                    },
+                                                    {
+                                                        "typeName": "checkout-delivery-options",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-delivery-options",
+                                                        "friendlyName": "Delivery options",
+                                                        "config": { "heading": { "text": "DELIVERY OPTION", "tag": "h2" } }
+                                                    },
+                                                    {
+                                                        "typeName": "checkout-section-container",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-section-container",
+                                                        "friendlyName": "Checkout section container",
+                                                        "config": {
+                                                            "heading": { "text": "PAYMENT METHOD", "tag": "h2" },
+                                                            "width": "fluid"
+                                                        },
+                                                        "modules": {
+                                                            "primary": [
+                                                                {
+                                                                    "typeName": "text-block",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-text-block",
+                                                                    "friendlyName": "Text Block",
+                                                                    "config": {
+                                                                        "paragraph": "<p><i><span><span><span><span>Notice: Payment info is for demo purposes only and does not process actual transactions; however, your payment info will be sent to your designated third-party payment provider</span></span></span></span><span><span><span><span>.</span></span></span></span></i></p>\n"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-loyalty",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-loyalty",
+                                                                    "friendlyName": "Loyalty points",
+                                                                    "config": {}
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-gift-card",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-gift-card",
+                                                                    "friendlyName": "Gift card",
+                                                                    "config": {}
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-payment-instrument",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-payment-instrument__0",
+                                                                    "friendlyName": "Credit card",
+                                                                    "config": {
+                                                                        "heading": { "text": "Heading", "tag": "h2" },
+                                                                        "iFrameHeightOverride": 330.0,
+                                                                        "paymentStyleOverride": ".chckt-sdk{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;font-weight:400;font-size:14px;line-height:20px;margin-left:-7px;text-transform:none;color:#323130!important}.chckt-pm,.chckt-pm.chckt-pm-card.js-chckt-pm.chckt-pm--last-child.js-chckt-pm--selected,.chckt-pm__header:hover,.js-chckt-pm--selected{background-color:transparent;background:0 0!important}.chckt-pm__header{background-color:#f8f7f6!important;margin-left:-11px}.chckt-pm__details{background-color:#f8f7f6!important}.chckt-pm__details,.chckt-pm__header{padding-left:0;padding-top:0}.chckt-pm,.chckt-pm.chckt-pm-card.js-chckt-pm.chckt-pm--last-child.js-chckt-pm--selected,.chckt-pm:first-child{border:none}.chckt-form--max-width{max-width:100%}@media only screen and (max-width:400px){.chckt-form{margin-left:auto}.chckt-form--max-width{max-width:unset}}.chckt-input-field{background:#fff;border:1px solid #605e5c;box-sizing:border-box;border-radius:2px;height:32px;padding:6px 8px;font-style: normal;font-weight:400;font-size:14px;line-height:20px}.chckt-form-label{padding-bottom:20px}.chckt-form-label__text{padding-bottom:4px;font-weight:600;font-size:14px;line-height:20px;color:#323130!important}.chckt-input-field.js-chckt-holdername:hover{background:#fff}.chckt-form-label--exp-date{margin-right:20px;width:40%}.chckt-input-field--recurring{background:0 0;padding-left:0}.chckt-form-label--cvc{width:40%}.chckt-form-label__error-text{color:#a80000;font-size:16px;line-height:21px}.chckt-input-field--error{border-left:2px solid #a80000}:first-child.chckt-pm{border-top:none}.chckt-pm__radio-button{height:24px;margin-left:0;margin-right:20px;margin-top:0;padding-top:0;width:24px;position:fixed;opacity:0}.chckt-pm__name{font-weight:600;font-size:20px;line-height:28px;padding-top:0!important;color:#323130!important}.chckt-checkbox{width:16px;height:16px}.chckt-pm-list__button{background:#fff;border:1px solid #4c833a;border-radius:2px;font-size:18px;font-weight:400;height:48px;line-height:24px;padding:12px 20px;text-transform:none;min-width:160px;text-align:center;width:initial}.chckt-pm-list__button:hover{background:#e1efdc}.chckt-more-pm-button__icon{display:none}.chckt-more-pm-button__text{float:none;margin-left:0;margin-top:0;padding-top:0}.chckt-pm__details input[disabled]+span{color:#ccc!important}"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "typeName": "checkout-billing-address",
+                                                                    "id": "IDNMAx6y4_d5n0m7n-checkout-billing-address__0",
+                                                                    "friendlyName": "Billing address",
+                                                                    "config": { "heading": { "text": "Heading", "tag": "h2" } }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "typeName": "checkout-guest-profile",
+                                                        "id": "IDNMAx6y4_d5n0m7n-checkout-guest-profile",
+                                                        "friendlyName": "Contact information",
+                                                        "config": { "heading": { "text": "CONTACT INFORMATION", "tag": "h2" } }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
                             }
                         ]
-                    },
-                    "id": "checkout__0",
-                    "typeName": "checkout"
+                    }
                 }
             ]
-        },
-        "id": "page",
-        "config": {},
-        "typeName": "default-page"
-    },
-    "modules": {
-        "page": {
-            "id": "page",
-            "typeName": "default-page"
-        },
-        "checkout__0": {
-            "id": "checkout__0",
-            "typeName": "checkout",
-            "data": {
-                "checkoutTitle": {
-                    "text": "Checkout",
-                    "headingTag": "h1"
-                },
-                "title_1": {
-                    "text": "Shipping Address",
-                    "headingTag": "h2"
-                },
-                "title_2": {
-                    "text": "Delivery option",
-                    "headingTag": "h2"
-                },
-                "title_3": {
-                    "text": "Payment method",
-                    "headingTag": "h2"
-                },
-                "title_4": {
-                    "text": "Contact Information",
-                    "headingTag": "h2"
-                }
-            }
-        },
-        "footerRegion": {
-            "id": "footerRegion",
-            "typeName": "default-container"
-        },
-        "checkout-place-order-1": {
-            "id": "checkout-place-order-1",
-            "typeName": "checkout-place-order",
-            "data": {
-                "orderConfirmationUrl": {
-                    "destinationUrl": "/thankyou?a=b"
-                }
-            }
-        },
-        "checkout-place-order-2": {
-            "id": "checkout-place-order-2",
-            "typeName": "checkout-place-order",
-            "data": {
-                "orderConfirmationUrl": {
-                    "destinationUrl": "/thankyou?a=b"
-                },
-                "keepShoppingLink": {
-                    "text": "Back to shopping",
-                    "destinationUrl": "/"
-                }
-            }
-        },
-        "checkout-place-order-3": {
-            "id": "checkout-place-order-2",
-            "typeName": "checkout-place-order",
-            "data": {
-                "orderConfirmationUrl": {
-                    "destinationUrl": "/thankyou?a=b"
-                },
-                "keepShoppingLink": {
-                    "text": "Back to shopping",
-                    "destinationUrl": "/"
-                }
-            }
-        },
-        "checkout-address-1": {
-            "id": "checkout-address-1",
-            "typeName": "checkout-address"
-        },
-        "checkout-payment-instrument-1": {
-            "id": "checkout-payment-instrument-1",
-            "typeName": "checkout-payment-instrument",
-            "config": {
-                "iFrameHeightOverride": 800
-            }
-        },
-        "guest-profile-1": {
-            "id": "guest-profile-1",
-            "typeName": "checkout-guest-profile"
-        },
-        "checkout-delivery-options-1": {
-            "id": "checkout-delivery-options-1",
-            "typeName": "checkout-delivery-options"
-        },
-        "checkout-gift-card-1": {
-            "id": "checkout-gift-card-1",
-            "typeName": "checkout-gift-card"
-        },
-        "checkout-line-items-1": {
-            "id": "checkout-line-items-1",
-            "typeName": "checkout-line-items",
-            "data": {
-                "title": {
-                    "text": "Shopping bag",
-                    "headingTag": "h2"
-                },
-                "editCartLink": {
-                    "destinationUrl": "/cart",
-                    "text": "Edit",
-                    "ariaLabel": "Edit shoppipng bag"
-                }
-            }
-        },
-        "checkout-cart-summary-1": {
-            "id": "checkout-cart-summary-1",
-            "typeName": "checkout-cart-summary"
-        },
-        "checkout-plain-container-1": {
-            "id": "checkout-plain-container-1",
-            "typeName": "checkout-plain-container"
-        },
-        "contentrichblockitem-1": {
-            "data": {
-                "blob": {
-                    "text": "For support, larger orders, and special business and EDU institute pricing call us at 866-425-4709 Monday through Friday, 6:00 AM to 6:00 PM PT"
-                }
-            },
-            "id": "contentrichblockitem-1",
-            "typeName": "content-rich-block-item"
         }
     },
     "renderingContext": {
-        "flightIds": [
-            "feature.xboxcontentondesktop",
-            "feature.sfwaa_control"
-        ],
-        "requestUrl": "rushmore.microsoft.com/cittadesign/demopagev3",
-        "clientContext": {
-            "deviceGroupId": "uplevel.web.pc.webkit.chrome",
-            "deviceType": "Pc"
+        "requestUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/checkout",
+        "sitePath": "/fabrikamga",
+        "clientIPAddress": "59.103.41.206",
+        "clientContext": { "deviceType": "Pc" },
+        "canonicalUrl": "https://www.vsicommerceeval.com/fabrikamga/checkout",
+        "canonicalDomain": "www.vsicommerceeval.com",
+        "staticContext": { "staticCdnUrl": "/_scnr/", "staticCdnUrlWithLocale": "/en-us/_msdyn365/_scnr/" },
+        "user": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsifQ.eyJleHAiOjE1ODU1Nzg5MzksIm5iZiI6MTU4NTU3NTMzOSwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kMzY1cGxjLmIyY2xvZ2luLmNvbS82NmJlNTljNS0yZjI5LTQ1MmQtODAyNC0yYWQ2Y2YyZDc3ZDgvdjIuMC8iLCJzdWIiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJhdWQiOiI1ZDkwNjQwZi1kZjZhLTRhMDYtYTVlYi02NTBhZWFjZWQ1ODciLCJub25jZSI6IjYzNzIxMTcyMDk4OTA3NzgzMC5aREEyTWpjd05tRXRaR00zTnkwME1qSmxMVGhoT0dJdE9UQXdORGRpTkRCbU56Rm1ZbUUzTWprMFlUY3RZVE01WkMwME16ZzVMVGd3WkRrdE1XTmpOVGM0WkdJMVpEaGwiLCJpYXQiOjE1ODU1NzUzMzksImF1dGhfdGltZSI6MTU4NTU3NTMzOSwiaWRwIjoibGl2ZS5jb20iLCJvaWQiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJnaXZlbl9uYW1lIjoiSGFyaXMiLCJmYW1pbHlfbmFtZSI6IlJhanB1dCIsImVtYWlscyI6WyJoYXJpc2FobWVkMzIxQG91dGxvb2suY29tIl0sInRmcCI6IkIyQ18xX3NpZ25pbnVwIiwiY19oYXNoIjoid2Q3XzdRSWJKTFVCRHFlUXJvLW9PZyJ9.Zw-IMmKLRWIempQYwKPoPQZ7uH_19CXqLyGk6UC683QnTAMJ9sbOjMgEfFJ5d6bOm9Jb_ivbmjyDHuxPCDcpiw83RNWhtYFhSEUKgF7wYqcdub5TMJwGVb2b68T1N-0fijkGWHB-qWa-T3V3ER1EivciyZmumXzOnj64SYI_e7ky6kfORqGmREBx6aj07r-p3TuQUKXUVp9uKrLE1CwBIpFPPO_fFDxonafJRQxQZxxav7XQlG-66bAqcIyaL13JmWG80D-L4qJuVLFT3yfmc3je7zxWMbY9uL0vF22OXCoOG2f-OX7BsEoMVLH9ehhc8gKJGzyytKSd_JG-j8J0Vw",
+            "isAuthenticated": true,
+            "signInUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signin",
+            "signOutUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signout",
+            "signUpUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signup",
+            "editProfileUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/editprofile",
+            "signinName": "Haris Rajput",
+            "firstName": "Haris",
+            "lastName": "Rajput",
+            "optOutWebActivityTracking": "False",
+            "tenantId": null,
+            "customerAccountNumber": "004221",
+            "name": "Haris Rajput",
+            "emailAddress": "harisahmed321@outlook.com"
         },
-        "staticContext": {
-            "staticCdnUrl": "/",
-            "staticCdnUrlWithLocale": "/"
-        },
-        "userContext": {
-            "token": null,
-            "isAuthenticated": false,
-            "signInUrl": "https://onerf.dev.microsoft.com:443/cittadesign/onerf/signin?EEL=True&pcexp=True",
-            "signOutUrl": "https://onerf.dev.microsoft.com:443/cittadesign/onerf/signout?pcexp=True",
-            "signinName": null,
-            "name": null,
-            "emailAddress": null,
-            "customerAccountNumber": null
-        },
-        "apiSettings": {
-            "baseUrl": "https://rushe2e-tie-sb3f7e6dfa6e7204c89ret.cloudax.test.dynamics.com/",
-            "channelId": 5637145359,
-            "catalogId": 0,
-            "oun": "077",
-            "baseImageUrl": "https://img-ppe-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/search?fileName=/"
-        },
+        "previewContext": null,
         "locale": "en-us",
-        "market": "US"
+        "textDirection": "ltr",
+        "suggestedMarket": null,
+        "urlTokens": {},
+        "apiSettings": {
+            "baseUrl": "https://vsicommerceeval5efcca299aa7c8e7ret.cloud.retail.dynamics.com/",
+            "channelId": 68719478279,
+            "catalogId": 0,
+            "oun": "128",
+            "baseImageUrl": "https://images-us-sb.cms.commerce.dynamics.com/cms/api/qvngfvszcl/imageFileData/search?fileName=/",
+            "ratingsReviewsEndpoint": "https://71fee24e-b456-4375-aba5-2505ff229944.rnr.ms",
+            "ratingsReviewsProxyEndpoint": "https://vsicommerceeval-eval.commerce.dynamics.com/_msdyn365/rnr/",
+            "rnr": {
+                "id": "71fee24e-b456-4375-aba5-2505ff229944",
+                "url": "https://71fee24e-b456-4375-aba5-2505ff229944.rnr.ms",
+                "proxyUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/_msdyn365/rnr/"
+            }
+        },
+        "gridSettings": { "xs": { "w": 767 }, "sm": { "w": 991 }, "md": { "w": 1199 }, "lg": { "w": 1599 }, "xl": { "w": 1600 } },
+        "debugMode": 0,
+        "operationId": "da4a6291a0fdee4bb2172c9e52309186",
+        "sameSiteRequired": true,
+        "features": { "scnr_blob": true, "legacy_getactiveprices": true, "disable_cors": true },
+        "telemetrySettings": {
+            "doNotCollectBiData": false,
+            "eventHubEndPoint": "",
+            "eventHubAuthToken": "",
+            "operationId": "da4a6291a0fdee4bb2172c9e52309186",
+            "url": "_msdyn365/_scnr/global-statics/static/js/da.0.js"
+        }
     },
     "statusCode": 200,
-    "redirectUrl": null
+    "redirectUrl": null,
+    "appContext": {
+        "config": {
+            "outOfStockThreshold": 0.0,
+            "maxQuantityForCartLineItem": 10.0,
+            "enableStockCheck": false,
+            "reviewTextMaxLength": 500.0,
+            "reviewTitleMaxLength": 50.0,
+            "disableTooltip": false,
+            "disableBopis": false,
+            "searchQueryStringParameter": "q",
+            "searchInputMaxLength": 50.0
+        },
+        "routes": {
+            "account": { "destinationUrl": "/fabrikamga/myaccount", "type": "internalLink" },
+            "accountProfile": { "destinationUrl": "/fabrikamga/profile-edit", "type": "internalLink" },
+            "backToShopping": { "destinationUrl": "/fabrikamga/home", "type": "internalLink" },
+            "cart": { "destinationUrl": "/fabrikamga/cart", "type": "internalLink" },
+            "checkout": { "destinationUrl": "/fabrikamga/checkout", "type": "internalLink" },
+            "home": { "destinationUrl": "/fabrikamga/home", "type": "internalLink" },
+            "loyalty": { "destinationUrl": "/fabrikamga/loyalty", "type": "internalLink" },
+            "loyaltyJoin": { "destinationUrl": "/fabrikamga/loyalty-join", "type": "internalLink" },
+            "orderConfirmation": { "destinationUrl": "/fabrikamga/orderconfirmation", "type": "internalLink" },
+            "orderDetails": { "destinationUrl": "/fabrikamga/orderdetails", "type": "internalLink" },
+            "search": { "destinationUrl": "/fabrikamga/search", "type": "internalLink" },
+            "wishlist": { "destinationUrl": "/fabrikamga/wishlist", "type": "internalLink" },
+            "loyaltyTerms": { "destinationUrl": "/fabrikamga/loyalty-terms", "type": "internalLink" }
+        },
+        "platform": { "disableCookieCompliance": false, "imageQuality": 80.0, "skipToMainText": "Skip to main content" },
+        "contentSecurityPolicy": { "disableContentSecurityPolicy": true }
+    }
 }

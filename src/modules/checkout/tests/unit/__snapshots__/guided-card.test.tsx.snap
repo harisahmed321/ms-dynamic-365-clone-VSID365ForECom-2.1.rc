@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout unit tests - Guided card renders correctly 1`] = `
+<div
+  class="ms-checkout__guided-card expanded visted ready"
+>
+  <div
+    class="ms-checkout__guided-card-header"
+  >
+    <h1
+      class="ms-checkout__guided-card-title"
+    >
+      <span
+        class="ms-checkout__guided-card-title-step"
+      >
+        1. 
+      </span>
+      <span
+        class="ms-checkout__guided-card-title-text"
+      >
+        Mock Title
+      </span>
+    </h1>
+    <button
+      aria-label="Change Mock Title"
+      class="ms-checkout__guided-card-btn-edit msc-btn btn-link"
+      title="Change"
+      type="button"
+    >
+      Change
+    </button>
+  </div>
+  <div
+    class="ms-checkout__guided-card-body"
+  >
+    <div
+      class="ms-checkout__guided-card-content"
+    >
+      Children
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout unit tests - View renders correctly when canShow is false 1`] = `
+<div
+  class="module-class-checkout"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="node-class-headerProps"
+  >
+    {title}
+  </div>
+  <div
+    class="node-class-bodyProps"
+  >
+    {loading}{alert}
+  </div>
+</div>
+`;
+
+exports[`Checkout unit tests - View renders correctly when canShow is true 1`] = `
+<div
+  class="module-class-checkout"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="node-class-headerProps"
+  >
+    {title}
+  </div>
+  <div
+    class="node-class-bodyProps"
+  >
+    {loading}{alert}
+    <div
+      class="node-class-mainProps"
+    >
+      {guidedForm}
+      <div
+        class="node-class-mainControlProps"
+      >
+        {placeOrderButton}{keepShoppingButton}
+      </div>
+    </div>
+    <div
+      class="node-class-sideProps"
+    >
+      <div
+        class="msc-order-summary-wrapper"
+      >
+        {heading}
+        <div
+          class="msc-order-summary__items"
+        >
+          {subtotal}{shipping}{tax}{totalDiscounts}{loyalty}{giftCard}{orderTotal}
+        </div>
+      </div>
+      <div
+        class="node-class-sideControlFirstProps"
+      >
+        {placeOrderButton}{keepShoppingButton}
+      </div>
+      <div
+        class="node-class-sideControlSecondProps"
+      >
+        {placeOrderButton}{keepShoppingButton}
+      </div>
+    </div>
+  </div>
+</div>
+`;
