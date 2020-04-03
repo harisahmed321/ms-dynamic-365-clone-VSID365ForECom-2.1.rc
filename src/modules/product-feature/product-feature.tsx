@@ -31,7 +31,15 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
     };
 
     public render(): JSX.Element | null {
+        console.log(this.props);
         const { config } = this.props;
+        const { user } = this.props.context.request;
+        console.log(user);
+        if (!user.isAuthenticated && user.signInUrl && window) {
+            window.location.assign(user.signInUrl);
+        } else {
+            console.log('user is authenticated');
+        }
 
         // set default product info values
         const ProductName = config.productTitle ? config.productTitle : 'No product name defined';
@@ -51,7 +59,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
             textColor: config.textColor,
             btnClickMe: this.onBtnClickMe
         };
-        // console.log('products', this.props.data.products);
+        // console.log('isAuthenticated', this.props.context.actionContext.requestContext.user.isAuthenticated);
         return this.props.renderView(ProductFeatureViewProps);
     }
 }

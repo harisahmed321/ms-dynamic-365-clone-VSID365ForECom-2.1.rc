@@ -57,7 +57,7 @@ const OrderSummaryComponent: React.FC<IOrderSummary> = ({ heading, lines }) => (
                     {lines.orderTotal}
                 </>
             )}
-    </div>
+        </div>
     </div>
 );
 

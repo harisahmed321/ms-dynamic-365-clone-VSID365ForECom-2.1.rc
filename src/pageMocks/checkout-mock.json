@@ -91,12 +91,34 @@
                                                         "ariaLabel": "My account"
                                                     },
                                                     {
+                                                        "linkText": "Personal Information",
+                                                        "linkUrl": { "destinationUrl": "/fabrikamga/myprofile", "type": "internalLink" }
+                                                    },
+                                                    {
                                                         "linkText": "Order history",
                                                         "linkUrl": {
                                                             "destinationUrl": "/fabrikamga/carbon-order-history",
                                                             "type": "internalLink"
                                                         },
                                                         "ariaLabel": "Order history"
+                                                    },
+                                                    {
+                                                        "linkText": "Wishlist",
+                                                        "linkUrl": {
+                                                            "destinationUrl": "/fabrikamga/carbon-wishlist",
+                                                            "type": "internalLink"
+                                                        }
+                                                    },
+                                                    {
+                                                        "linkText": "Addresses",
+                                                        "linkUrl": {
+                                                            "destinationUrl": "/fabrikamga/carbon-address",
+                                                            "type": "internalLink"
+                                                        }
+                                                    },
+                                                    {
+                                                        "linkText": "Loyalty Program",
+                                                        "linkUrl": { "destinationUrl": "/fabrikamga/loyalty-join", "type": "internalLink" }
                                                     }
                                                 ]
                                             },
@@ -119,7 +141,7 @@
                                                                         {
                                                                             "linkText": "Contact Us",
                                                                             "linkUrl": {
-                                                                                "destinationUrl": "/fabrikamga/",
+                                                                                "destinationUrl": "/fabrikamga/contact",
                                                                                 "type": "internalLink"
                                                                             },
                                                                             "ariaLabel": "Contact Us",
@@ -204,10 +226,11 @@
                                                             "link": {
                                                                 "linkText": "Contact",
                                                                 "linkUrl": {
-                                                                    "destinationUrl": "/fabrikamga/comingsoon",
+                                                                    "destinationUrl": "/fabrikamga/contact",
                                                                     "type": "internalLink"
                                                                 },
-                                                                "ariaLabel": "Contact"
+                                                                "ariaLabel": "Contact",
+                                                                "openInNewTab": true
                                                             }
                                                         },
                                                         "data": {}
@@ -258,7 +281,8 @@
                                                                     "destinationUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
                                                                     "type": "externalLink"
                                                                 },
-                                                                "ariaLabel": "Privacy policy for Fabrikam"
+                                                                "ariaLabel": "Privacy policy for Fabrikam",
+                                                                "openInNewTab": true
                                                             }
                                                         }
                                                     },
@@ -271,9 +295,10 @@
                                                             "link": {
                                                                 "linkText": "Terms and conditions",
                                                                 "linkUrl": {
-                                                                    "destinationUrl": "/fabrikamga/termsandconditions",
+                                                                    "destinationUrl": "/fabrikamga/carbon-term-and-condition",
                                                                     "type": "internalLink"
-                                                                }
+                                                                },
+                                                                "openInNewTab": true
                                                             }
                                                         },
                                                         "data": {}
@@ -674,7 +699,7 @@
         "canonicalDomain": "www.vsicommerceeval.com",
         "staticContext": { "staticCdnUrl": "/_scnr/", "staticCdnUrlWithLocale": "/en-us/_msdyn365/_scnr/" },
         "user": {
-            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsifQ.eyJleHAiOjE1ODU1Nzg5MzksIm5iZiI6MTU4NTU3NTMzOSwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kMzY1cGxjLmIyY2xvZ2luLmNvbS82NmJlNTljNS0yZjI5LTQ1MmQtODAyNC0yYWQ2Y2YyZDc3ZDgvdjIuMC8iLCJzdWIiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJhdWQiOiI1ZDkwNjQwZi1kZjZhLTRhMDYtYTVlYi02NTBhZWFjZWQ1ODciLCJub25jZSI6IjYzNzIxMTcyMDk4OTA3NzgzMC5aREEyTWpjd05tRXRaR00zTnkwME1qSmxMVGhoT0dJdE9UQXdORGRpTkRCbU56Rm1ZbUUzTWprMFlUY3RZVE01WkMwME16ZzVMVGd3WkRrdE1XTmpOVGM0WkdJMVpEaGwiLCJpYXQiOjE1ODU1NzUzMzksImF1dGhfdGltZSI6MTU4NTU3NTMzOSwiaWRwIjoibGl2ZS5jb20iLCJvaWQiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJnaXZlbl9uYW1lIjoiSGFyaXMiLCJmYW1pbHlfbmFtZSI6IlJhanB1dCIsImVtYWlscyI6WyJoYXJpc2FobWVkMzIxQG91dGxvb2suY29tIl0sInRmcCI6IkIyQ18xX3NpZ25pbnVwIiwiY19oYXNoIjoid2Q3XzdRSWJKTFVCRHFlUXJvLW9PZyJ9.Zw-IMmKLRWIempQYwKPoPQZ7uH_19CXqLyGk6UC683QnTAMJ9sbOjMgEfFJ5d6bOm9Jb_ivbmjyDHuxPCDcpiw83RNWhtYFhSEUKgF7wYqcdub5TMJwGVb2b68T1N-0fijkGWHB-qWa-T3V3ER1EivciyZmumXzOnj64SYI_e7ky6kfORqGmREBx6aj07r-p3TuQUKXUVp9uKrLE1CwBIpFPPO_fFDxonafJRQxQZxxav7XQlG-66bAqcIyaL13JmWG80D-L4qJuVLFT3yfmc3je7zxWMbY9uL0vF22OXCoOG2f-OX7BsEoMVLH9ehhc8gKJGzyytKSd_JG-j8J0Vw",
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsifQ.eyJleHAiOjE1ODU5MjQ4ODQsIm5iZiI6MTU4NTkyMTI4NCwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9kMzY1cGxjLmIyY2xvZ2luLmNvbS82NmJlNTljNS0yZjI5LTQ1MmQtODAyNC0yYWQ2Y2YyZDc3ZDgvdjIuMC8iLCJzdWIiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJhdWQiOiI1ZDkwNjQwZi1kZjZhLTRhMDYtYTVlYi02NTBhZWFjZWQ1ODciLCJub25jZSI6IjYzNzIxNTE3OTkyMTE5NTYyMy5aR1F4TjJZMlkyTXRZbU0yTlMwME5XSXhMV0k0TkRZdE1tVXdNRE01WVRabE1tVTFNREE1TkRGak4yWXRaamxpTlMwMFpXVmhMVGd5Tm1JdFpERm1Zamc0WkdRNE56UmkiLCJpYXQiOjE1ODU5MjEyODQsImF1dGhfdGltZSI6MTU4NTkyMTI4NCwiaWRwIjoibGl2ZS5jb20iLCJvaWQiOiIxY2YxZTA4Yy1mM2ZhLTRkNzctYWRmMS0zY2U1MzdkMzMyNzgiLCJnaXZlbl9uYW1lIjoiSGFyaXMiLCJmYW1pbHlfbmFtZSI6IlJhanB1dCIsImVtYWlscyI6WyJoYXJpc2FobWVkMzIxQG91dGxvb2suY29tIl0sInRmcCI6IkIyQ18xX3NpZ25pbnVwIiwiY19oYXNoIjoiWXNhaGcwZmNWVVhYUGlaZDc2MUVvQSJ9.o72sH_GFpDU-eCITfUB2FFJyouUlFZCmkuL05KOf-DsUQ7Bv-bsNKOVZo3SSAG09TuQOKAULVOn4BQpDYbSadFbR0vD6GjApfS3Un5hgmixm8SSP7ja1FClv1tEtHwJnzAsbdEcxWRMbh0EC77GIiI54URWlTQUeH2USk8o3_jfEn6rwE6goeOHRPZl_ztXvJvRnvGZyh2ISeXx_hIs3igk4zEv6qPEgdyqV0g6jK43zwXCIcqFxBU3L0VKTWOpde36GFbgX2Q3xWORNIlAteZ5vT80bnSxOFvhPQ2P7fF-t7Wk-5EEZMTrIXIQ_Z_YH7LS5dQUl1QPDxC-2y6iSBA",
             "isAuthenticated": true,
             "signInUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signin",
             "signOutUrl": "https://vsicommerceeval-eval.commerce.dynamics.com/fabrikamga/_msdyn365/signout",
@@ -687,7 +712,8 @@
             "tenantId": null,
             "customerAccountNumber": "004221",
             "name": "Haris Rajput",
-            "emailAddress": "harisahmed321@outlook.com"
+            "emailAddress": "harisahmed321@outlook.com",
+            "userClaims": {}
         },
         "previewContext": null,
         "locale": "en-us",
@@ -710,14 +736,18 @@
         },
         "gridSettings": { "xs": { "w": 767 }, "sm": { "w": 991 }, "md": { "w": 1199 }, "lg": { "w": 1599 }, "xl": { "w": 1600 } },
         "debugMode": 0,
-        "operationId": "da4a6291a0fdee4bb2172c9e52309186",
+        "operationId": "3943e3cfaa57b24daaffe80ee9d956f6",
         "sameSiteRequired": true,
         "features": { "scnr_blob": true, "legacy_getactiveprices": true, "disable_cors": true },
+        "themeOverride": {
+            "url": "https://files-us-sb.cms.commerce.dynamics.com/cms/api/qvngfvszcl/binary/SA1iE0",
+            "disableDefault": false
+        },
         "telemetrySettings": {
             "doNotCollectBiData": false,
             "eventHubEndPoint": "",
             "eventHubAuthToken": "",
-            "operationId": "da4a6291a0fdee4bb2172c9e52309186",
+            "operationId": "3943e3cfaa57b24daaffe80ee9d956f6",
             "url": "_msdyn365/_scnr/global-statics/static/js/da.0.js"
         }
     },
@@ -733,7 +763,14 @@
             "disableTooltip": false,
             "disableBopis": false,
             "searchQueryStringParameter": "q",
-            "searchInputMaxLength": 50.0
+            "searchInputMaxLength": 50.0,
+            "badgeShow": true,
+            "badgePriority": "discount",
+            "customAttribute": "Test",
+            "badgeFontBold": true,
+            "badgeFontColor": "#F4A460",
+            "badgeBackgroundColor": "#000000",
+            "badgeBorderShow": true
         },
         "routes": {
             "account": { "destinationUrl": "/fabrikamga/myaccount", "type": "internalLink" },

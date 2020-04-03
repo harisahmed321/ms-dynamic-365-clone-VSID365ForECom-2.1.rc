@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 import { IOrderSummaryLines, OrderSummary } from '@msdyn365-commerce-modules/order-summary-utilities';
-import { Heading,INodeProps } from '@msdyn365-commerce-modules/utilities';
+import { Heading, INodeProps } from '@msdyn365-commerce-modules/utilities';
 import get from 'lodash/get';
 import * as React from 'react';
 import { ICheckoutData } from '../checkout.data';

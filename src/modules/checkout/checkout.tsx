@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/ //
 import { IModuleStateProps, withModuleState } from '@msdyn365-commerce-modules/checkout-utilities';
-import { Button,Heading,IModuleProps, INodeProps, Waiting } from '@msdyn365-commerce-modules/utilities';
+import { Button, Heading, IModuleProps, INodeProps, Waiting } from '@msdyn365-commerce-modules/utilities';
 import { AsyncResultStatus, getUrlSync } from '@msdyn365-commerce/core';
 import classnames from 'classnames';
 import get from 'lodash/get';
@@ -60,7 +60,7 @@ export interface ICheckoutViewProps extends ICheckoutProps<{}> {
     keepShoppingButton?: React.ReactNode;
 }
 
-export interface ICheckoutModuleProps extends ICheckoutProps<ICheckoutData>, IModuleStateProps { }
+export interface ICheckoutModuleProps extends ICheckoutProps<ICheckoutData>, IModuleStateProps {}
 
 /**
  *
@@ -118,26 +118,27 @@ class Checkout extends React.Component<ICheckoutModuleProps> {
 
         // @ts-ignore: Compiler not reconizing condition check for function params
         when(
-             () => {
-                 return this.isEmptyCart;
-             },
-             () => {
-                 const editCartLink = getUrlSync('cart', this.props.context.actionContext) || '';
-                 if (window && editCartLink) {
-                      // Redirect to cart page if cart is empty
-                      window.location.assign(editCartLink);
-                  } else {
-                      this.setState({
-                          errorMessage: genericErrorMessage
-                      });
-                      this.props.context.telemetry.error('Cart is empty, but no editCartLink found');
-                  }
-             }
-         );
+            () => {
+                return this.isEmptyCart;
+            },
+            () => {
+                const editCartLink = getUrlSync('cart', this.props.context.actionContext) || '';
+                if (window && editCartLink) {
+                    // Redirect to cart page if cart is empty
+                    window.location.assign(editCartLink);
+                } else {
+                    this.setState({
+                        errorMessage: genericErrorMessage
+                    });
+                    this.props.context.telemetry.error('Cart is empty, but no editCartLink found');
+                }
+            }
+        );
     }
 
     // tslint:disable-next-line:max-func-body-length
     public render(): JSX.Element {
+        console.log('checkout-props', this.props);
         const {
             moduleState,
             config: { className, checkoutHeading, disableGuidedCheckoutFlow },
@@ -194,7 +195,7 @@ class Checkout extends React.Component<ICheckoutModuleProps> {
         } else if (!this.cartStatus || this.cartStatus === 'LOADING' || this.isEmptyCart) {
             viewProps = {
                 ...viewProps,
-                loading: <Waiting className='msc-waiting-circular msc-waiting-lg'/>
+                loading: <Waiting className='msc-waiting-circular msc-waiting-lg' />
             };
         } else if (this.hasError) {
             viewProps = {
@@ -218,8 +219,8 @@ class Checkout extends React.Component<ICheckoutModuleProps> {
                         }}
                     />
                 ) : (
-                        undefined
-                    ),
+                    undefined
+                ),
                 orderSummary: getOrderSummary(this.props),
                 lineItems: getLineItems(this.props),
                 placeOrderButton: (
@@ -232,7 +233,7 @@ class Checkout extends React.Component<ICheckoutModuleProps> {
                         color='secondary'
                         href={backToShoppingUrl}
                     >
-                    {backToShopping}
+                        {backToShopping}
                     </Button>
                 )
             };
